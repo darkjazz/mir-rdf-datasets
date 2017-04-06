@@ -8,7 +8,7 @@ MB_ARTIST_URI_BASE = "https://musicbrainz.org/artist/"
 
 class MSDRDFExtractor:
     def __init__(self):
-        self.datadir = "/Users/alo/Data/MillionSongSubset/data"
+        self.datadir = "./data"
 
     def processFile(self, path, includeAnalysis=True):
         file_path = join(self.datadir, path[2], path[3], path[4], path)
@@ -236,21 +236,18 @@ class MSDRDFExtractor:
                 self.graph.add(( oid, self.ns['event']['time'], iid ))
                 self.graph.add(( oid, self.ns['afo']['confidence'], Literal(conf[i]) ))
 
+from os import walk
+from os.path import isfile
 
-processAll = True
-me = MSDRDFExtractor()
-
-if processAll:
-    from os import walk
-    from os.path import isfile
-
-    for root, dirs, files in walk("/Users/alo/Data/MillionSongSubset/data/", topdown=False):
+def main():
+    me = MSDRDFExtractor()
+    for root, dirs, files in walk("./data/", topdown=False):
         for name in files:
             path = join(root, name)
             if isfile(path):
-                me.processFile(path)
-                me.serialize("/Users/alo/data/MillionSongSubset/rdf/" + name.split(".")[0] + ".n3")
+                me.processFile(name)
+                me.serialize("./rdf/" + name.split(".")[0] + ".n3")
                 print(path)
-else:
-    me.processFile("TRAAAAW128F429D538.h5", False)
-    me.serialize("TRAAAAW128F429D538.n3")
+
+if __name__ == "__main__":
+    main()
