@@ -486,16 +486,25 @@ class EssentiaConverter:
         self.hl_keys = [u'timbre', u'ismir04_rhythm', u'voice_instrumental', u'gender', u'genre_rosamerica', u'mood_electronic', u'genre_electronic', u'mood_sad', u'tonal_atonal', u'mood_party', u'moods_mirex', u'danceability', u'genre_dortmund', u'mood_acoustic', u'mood_happy', u'mood_aggressive', u'genre_tzanetakis', u'mood_relaxed']
 
 def main():
-	print sys.argv[1]
-	if (sys.argv[1] is None or len(sys.argv[1]) != 36):
-		print("invalid MusicBrainz recording ID, exiting..")
-	else:
+	if sys.argv[1] == "test":
+		with open("test_101.file", "r") as test_file:
+			mbids = test_file.read()
+			test_file.close()
 		c = EssentiaConverter()
-		n3 = c.get(sys.argv[1])
-		if not sys.argv[2] is None:
-			c.serialize(sys.argv[2])
+		for mbid in mbids.split("\n"):
+			n3 = c.get(mbid)
+			c.serialize("./rdf/" + mbid + ".n3")
+			print(mbid)
+	else:
+		if (sys.argv[1] is None or len(sys.argv[1]) != 36):
+			print("invalid MusicBrainz recording ID, exiting..")
 		else:
-			return n3
+			c = EssentiaConverter()
+			n3 = c.get(sys.argv[1])
+			if not sys.argv[2] is None:
+				c.serialize(sys.argv[2])
+			else:
+				return n3
 
 if __name__ == "__main__":
     main()

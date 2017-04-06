@@ -1,0 +1,2037 @@
+@prefix afo: <https://w3id.org/afo/onto/1.1#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix essentia: <http://sovarr.c4dm.eecs.qmul.ac.uk/af/essentia/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://musicbrainz.org/release/1a1a6a54-a981-4c18-b7db-a94e993f5794> a mo:Release ;
+    dc:title "Hugo in 3 Months - Spanish" ;
+    mo:publisher [ a mo:Label ;
+            foaf:name "Dorling Kindersley" ] ;
+    mo:publishing_location "GB" ;
+    mo:release_status mo:official ;
+    mo:release_type mo:audiobook ;
+    mo:track <http://musicbrainz.org/recording/0585d6c3-5c22-495f-b02e-0417d0e9bb7d> ;
+    essentia:asin "075136990X" ;
+    foaf:maker <http://musicbrainz.org/artist/80a8851f-444c-4539-892b-ad2a49292aa9> .
+
+<3-26.+Reading+Practice_+Los+Espanolitos+de+Alsemberg.mp3> a mo:AudioFile ;
+    mo:encodes [ a essentia:Signal ;
+            mo:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+            essentia:bit_rate "192000"^^xsd:float ;
+            essentia:codec "mp3"^^xsd:string ;
+            essentia:downmix "mix"^^xsd:string ;
+            essentia:equal_loudness "0"^^xsd:float ;
+            essentia:lossless false ;
+            essentia:md5_encoded "8f6488c4490f14e37fe48e80cafa3c18"^^xsd:string ;
+            essentia:replay_gain "-1.15548324585"^^xsd:float ] .
+
+<http://musicbrainz.org/artist/80a8851f-444c-4539-892b-ad2a49292aa9> a mo:MusicArtist ;
+    foaf:name "[language instruction]" .
+
+<http://musicbrainz.org/recording/0585d6c3-5c22-495f-b02e-0417d0e9bb7d> a mo:Track ;
+    dc:title "Reading Practice: Los Espanolitos de Alsemberg" ;
+    mo:available_as <3-26.+Reading+Practice_+Los+Espanolitos+de+Alsemberg.mp3> ;
+    mo:genre [ a mo:Genre ;
+            rdfs:label "Language" ] ;
+    mo:track_number "26/29" .
+
+[] a essentia:VersionInfo .
+
+_:0050e7ac-09cc-4bdd-bb47-8d6515b75a49 a essentia:Variance ;
+    afo:value 2.491046e-01 .
+
+_:00519a0a-3842-4ba1-8e2c-ed576eb72972 a essentia:FlatnessDB ;
+    afo:feature [ a essentia:SecondDerivativeVariance ;
+            afo:value 2.881797e-03 ],
+        [ a essentia:Median ;
+            afo:value 1.739593e-01 ],
+        [ a essentia:Minimum ;
+            afo:value 1.952766e-02 ],
+        [ a essentia:Variance ;
+            afo:value 4.916765e-03 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 6.33566e-02 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 4.099573e-02 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.254479e-03 ],
+        [ a essentia:Mean ;
+            afo:value 1.743092e-01 ],
+        [ a essentia:Maximum ;
+            afo:value 4.51539e-01 ] .
+
+_:006553f1-aa40-4035-942e-49edcb8dcee9 a essentia:Mean ;
+    afo:value 2.709011e+00 .
+
+_:01b0c9fa-a7b1-4960-a8f8-d22c257f5392 a essentia:DerivativeVariance ;
+    afo:values ( 3.444637e-01 4.728055e-01 4.076177e-01 3.403379e-01 2.488293e-01 6.68157e-01 ) .
+
+_:021484ad-ec80-48cd-aa32-c8c5b50e8e35 a essentia:Variance ;
+    afo:value 0 .
+
+_:02b4c861-18dc-45dc-8e1e-82a152074fd5 a essentia:BPM ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 1.358167e+02 .
+
+_:02ce9e21-dfbd-4b4d-87f6-dae5757b0ee0 a essentia:Entropy ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Minimum ;
+            afo:value 5.065122e+00 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 8.320394e-02 ],
+        [ a essentia:Median ;
+            afo:value 7.114309e+00 ],
+        [ a essentia:Variance ;
+            afo:value 4.66997e-01 ],
+        [ a essentia:Mean ;
+            afo:value 7.176662e+00 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 2.766842e-01 ],
+        [ a essentia:Maximum ;
+            afo:value 9.826849e+00 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 1.859937e-01 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 4.202618e-01 ] .
+
+_:0384f1bd-11c5-42ce-9ac6-c1caff9f738d a essentia:DerivativeMean ;
+    afo:value 0 .
+
+_:03aea448-5fe3-4c50-a0d8-a472486fb86e rdf:first 9.836065e+00 ;
+    rdf:rest ( 7.029309e+00 2.930949e+00 5.191257e+00 2.011923e+00 9.190264e+00 5.63835e+00 5.837059e+00 6.209638e-01 1.465474e+00 5.464481e-01 1.738698e-01 6.706408e-01 2.011923e+00 5.464481e-01 3.974168e-01 1.440636e+00 3.874814e+00 1.328862e+01 4.222553e+00 4.818678e+00 3.725782e-01 8.594138e+00 9.289618e+00 ) .
+
+_:041969ef-b750-44ac-8d69-a983146aa1ae a essentia:MelBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:DerivativeMean ;
+            afo:values ( 6.68178e-05 2.584808e-04 6.460187e-04 6.746197e-04 5.499407e-04 3.831804e-04 2.645358e-04 1.584516e-04 1.468302e-04 1.072449e-04 5.474027e-05 3.180472e-05 2.605999e-05 1.496423e-05 1.508258e-05 1.330647e-05 1.319403e-05 1.202477e-05 6.746868e-06 7.883338e-06 5.076967e-06 2.469433e-06 2.96426e-06 4.667248e-06 1.545296e-06 4.493882e-07 1.705399e-07 8.58414e-08 8.762095e-08 7.917068e-08 6.10616e-08 4.440137e-08 3.094943e-08 2.441646e-08 1.787358e-08 1.303019e-08 9.770597e-09 8.380181e-09 7.374243e-09 6.521819e-09 ) ],
+        [ a essentia:Mean ;
+            afo:values ( 1.016583e-04 3.61646e-04 8.003415e-04 7.824656e-04 5.919491e-04 4.023217e-04 2.816803e-04 1.719993e-04 1.566194e-04 1.114561e-04 5.532298e-05 3.235868e-05 2.763919e-05 1.750306e-05 1.756636e-05 1.617311e-05 1.649153e-05 1.482549e-05 8.300031e-06 9.272604e-06 6.028098e-06 3.036612e-06 3.570581e-06 5.656597e-06 1.934736e-06 5.510061e-07 2.025306e-07 9.096232e-08 1.026661e-07 9.524128e-08 7.151233e-08 5.219911e-08 3.611924e-08 2.817501e-08 1.853993e-08 1.240412e-08 8.888031e-09 7.490312e-09 6.587686e-09 5.826219e-09 ) ],
+        [ a essentia:Median ;
+            afo:values ( 3.908423e-05 6.364351e-05 8.83504e-05 4.972712e-05 1.043239e-05 5.082826e-06 4.84281e-06 3.292265e-06 2.383639e-06 1.943985e-06 2.134058e-06 1.795903e-06 1.736586e-06 1.875044e-06 2.281884e-06 2.198701e-06 2.616237e-06 1.8955e-06 8.130958e-07 6.044884e-07 5.170454e-07 2.940536e-07 4.368873e-07 8.133144e-07 3.192903e-07 1.059928e-07 3.460986e-08 1.077596e-08 1.02598e-08 1.040307e-08 9.356905e-09 7.059349e-09 4.799972e-09 3.503899e-09 1.661148e-09 8.073981e-10 4.871982e-10 3.709625e-10 3.206472e-10 2.831493e-10 ) ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:values ( 1.026408e-04 3.842007e-04 9.897035e-04 1.021451e-03 8.383986e-04 5.657911e-04 3.860812e-04 2.383457e-04 2.228825e-04 1.610379e-04 8.402647e-05 4.890635e-05 4.015674e-05 2.297777e-05 2.30716e-05 2.035348e-05 2.038217e-05 1.856468e-05 1.03354e-05 1.203468e-05 7.662873e-06 3.620622e-06 4.487716e-06 7.152102e-06 2.354401e-06 6.778654e-07 2.530346e-07 1.309602e-07 1.328831e-07 1.212122e-07 8.844238e-08 6.374997e-08 4.75627e-08 3.721e-08 2.765075e-08 2.085288e-08 1.609842e-08 1.382191e-08 1.216322e-08 1.075523e-08 ) ],
+        [ a essentia:Minimum ;
+            afo:values ( 1.487594e-24 1.097527e-24 1.992245e-24 1.318513e-24 9.276709e-25 1.167991e-24 1.879032e-24 1.697722e-24 1.92068e-24 1.843578e-24 2.323824e-24 1.077406e-24 2.878802e-24 2.498295e-24 1.917629e-24 2.524697e-24 3.147908e-24 2.63185e-24 3.309206e-24 2.580005e-24 4.067236e-24 3.486798e-24 4.008614e-24 2.654293e-24 3.881138e-24 4.35618e-24 4.166351e-24 4.647277e-24 4.28588e-24 4.949292e-24 4.211066e-24 4.33201e-24 5.342758e-24 5.177167e-24 4.61988e-24 5.145928e-24 5.428755e-24 6.114811e-24 6.15336e-24 7.038627e-24 ) ],
+        [ a essentia:DerivativeVariance ;
+            afo:values ( 1.495957e-08 3.241837e-07 2.565454e-06 2.922356e-06 2.746695e-06 1.844442e-06 1.059019e-06 4.114114e-07 3.43377e-07 1.797402e-07 4.432418e-08 1.376447e-08 6.994259e-09 2.867502e-09 5.432923e-09 1.337757e-09 8.957291e-10 7.476292e-10 3.176379e-10 8.680524e-10 3.789953e-10 8.107462e-11 6.637513e-11 9.590533e-11 1.258455e-11 6.618249e-12 2.600543e-12 1.222136e-12 1.871539e-12 1.160859e-12 3.59777e-13 1.359474e-13 1.968697e-14 9.724263e-15 5.148983e-15 2.977615e-15 1.261058e-15 9.493548e-16 7.366664e-16 5.762971e-16 ) ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:values ( 3.435288e-08 6.71678e-07 5.547196e-06 6.201779e-06 5.888222e-06 3.872899e-06 2.28152e-06 8.564327e-07 7.389509e-07 3.977056e-07 1.034543e-07 3.206574e-08 1.581742e-08 6.011215e-09 1.101453e-08 2.980242e-09 2.097205e-09 1.707216e-09 7.122001e-10 1.79449e-09 7.444751e-10 1.421535e-10 1.467795e-10 2.250317e-10 2.57599e-11 1.396569e-11 5.311715e-12 2.683378e-12 3.6329e-12 2.085065e-12 5.987486e-13 2.056269e-13 3.177133e-14 1.510669e-14 9.593455e-15 6.164609e-15 2.940511e-15 2.233126e-15 1.732207e-15 1.354751e-15 ) ],
+        [ a essentia:Maximum ;
+            afo:values ( 2.675749e-03 1.015247e-02 4.484442e-02 3.805095e-02 5.360076e-02 2.95257e-02 2.655713e-02 2.338628e-02 1.362667e-02 1.224223e-02 4.373316e-03 3.482015e-03 2.278264e-03 2.287087e-03 5.345155e-03 1.54229e-03 6.235141e-04 6.193258e-04 3.854298e-04 7.528308e-04 7.409587e-04 3.511959e-04 1.990621e-04 2.75994e-04 1.16149e-04 1.811907e-04 1.152021e-04 6.730959e-05 8.098276e-05 8.016825e-05 5.338031e-05 3.378197e-05 9.634957e-06 6.607509e-06 4.490086e-06 2.579919e-06 7.683392e-07 6.780088e-07 5.988714e-07 5.311129e-07 ) ],
+        [ a essentia:Variance ;
+            afo:values ( 2.612141e-08 5.974251e-07 3.806711e-06 4.274861e-06 3.776561e-06 2.527371e-06 1.348597e-06 5.470069e-07 4.62186e-07 2.150583e-07 4.765856e-08 1.542933e-08 9.065685e-09 3.660768e-09 6.46143e-09 1.80888e-09 1.315779e-09 1.14516e-09 4.866292e-10 1.364569e-09 5.908614e-10 1.561257e-10 9.986139e-11 1.386853e-10 2.042638e-11 7.964926e-12 3.228859e-12 1.602427e-12 2.961141e-12 2.047348e-12 6.824985e-13 2.78591e-13 4.375433e-14 2.201309e-14 8.875929e-15 3.789885e-15 1.247195e-15 9.106704e-16 7.062977e-16 5.529506e-16 ) ] .
+
+_:046abf65-a2d5-4768-b97e-1cae02153a63 a essentia:SecondDerivativeMean ;
+    afo:value 0 .
+
+_:05703354-19ea-4808-9a50-338ed4f5d5a2 rdf:first 8.99492e-02 ;
+    rdf:rest ( 5.253487e-02 3.986674e-02 1.214959e-02 2.102241e-02 2.361692e-03 ) .
+
+_:059c409e-664d-44a3-b3fa-2b7e4c8e2c15 a essentia:Danceability ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 1.264689e+00 .
+
+_:05cbab21-890d-41a7-a416-2422861f6a44 a essentia:Median ;
+    afo:value 1 .
+
+_:05f614e4-90ed-4fe3-ada0-34500439721f a essentia:DerivativeMean ;
+    afo:values ( 6.386678e-02 4.711274e-02 4.10673e-02 3.538145e-02 4.239121e-02 3.822977e-02 ) .
+
+_:064d0b5a-33e3-4140-8591-0ba8746d170f a essentia:DerivativeVariance ;
+    afo:value 7.495304e-09 .
+
+_:0657a6a8-9930-473c-b122-f46ee0140796 a essentia:SecondDerivativeMean ;
+    afo:value 1.065515e-02 .
+
+_:066a1a77-dae4-4aab-85d3-19beb0491893 a essentia:HPCP ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Mean ;
+            afo:values ( 1.819773e-01 1.794505e-01 1.839556e-01 1.807996e-01 1.658699e-01 1.433564e-01 1.362413e-01 1.423021e-01 1.548817e-01 1.721693e-01 1.771926e-01 1.676911e-01 1.575362e-01 1.596392e-01 1.872874e-01 2.518573e-01 2.742289e-01 2.214464e-01 1.7506e-01 1.641777e-01 1.667278e-01 1.620102e-01 1.62261e-01 2.166906e-01 2.332081e-01 1.834583e-01 1.716061e-01 1.853703e-01 1.897132e-01 1.841593e-01 1.775633e-01 1.692528e-01 1.681196e-01 1.729992e-01 1.762034e-01 1.828029e-01 ) ],
+        [ a essentia:DerivativeVariance ;
+            afo:values ( 5.706576e-02 5.856908e-02 6.05282e-02 6.288658e-02 5.890299e-02 4.722765e-02 4.382812e-02 4.398784e-02 4.984396e-02 5.62274e-02 5.526435e-02 5.271871e-02 4.728336e-02 5.07958e-02 5.917116e-02 6.551187e-02 7.420594e-02 7.762807e-02 6.537555e-02 5.817802e-02 5.944078e-02 5.634247e-02 4.985911e-02 5.675577e-02 6.678462e-02 5.125961e-02 5.803935e-02 6.053521e-02 5.876751e-02 5.854902e-02 5.745165e-02 5.388739e-02 5.107318e-02 5.168264e-02 5.070068e-02 5.543697e-02 ) ],
+        [ a essentia:Maximum ;
+            afo:values ( 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ) ],
+        [ a essentia:Median ;
+            afo:values ( 7.867031e-02 7.415353e-02 7.44187e-02 7.396716e-02 6.712121e-02 6.095579e-02 5.980318e-02 6.162347e-02 6.732602e-02 7.324313e-02 7.248108e-02 6.932817e-02 7.235321e-02 7.07549e-02 8.392228e-02 9.802639e-02 1.071725e-01 8.864547e-02 6.76989e-02 6.280307e-02 6.515931e-02 6.583435e-02 7.057309e-02 1.065167e-01 1.086601e-01 8.564588e-02 6.95347e-02 7.561337e-02 7.905278e-02 7.64914e-02 7.133554e-02 7.010853e-02 7.10219e-02 6.968996e-02 7.336277e-02 7.750054e-02 ) ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:values ( 1.547244e-01 1.59233e-01 1.642057e-01 1.753957e-01 1.6334e-01 1.290802e-01 1.211133e-01 1.212607e-01 1.356069e-01 1.542859e-01 1.452766e-01 1.383893e-01 1.291132e-01 1.381566e-01 1.701401e-01 1.815372e-01 1.989556e-01 2.18058e-01 1.793917e-01 1.57199e-01 1.612979e-01 1.536543e-01 1.359198e-01 1.476896e-01 1.752442e-01 1.378836e-01 1.605099e-01 1.626008e-01 1.535821e-01 1.59262e-01 1.538789e-01 1.447125e-01 1.389709e-01 1.408848e-01 1.34624e-01 1.444505e-01 ) ],
+        [ a essentia:DerivativeMean ;
+            afo:values ( 1.953288e-01 1.970438e-01 2.018882e-01 2.033209e-01 1.896948e-01 1.636106e-01 1.513464e-01 1.570174e-01 1.70673e-01 1.898084e-01 1.879278e-01 1.783795e-01 1.700701e-01 1.790849e-01 2.111225e-01 2.219277e-01 2.374447e-01 2.541743e-01 2.017074e-01 1.795493e-01 1.836935e-01 1.794991e-01 1.70211e-01 2.069016e-01 2.235741e-01 1.847445e-01 1.867623e-01 1.985244e-01 1.986784e-01 1.960803e-01 1.920737e-01 1.832349e-01 1.806708e-01 1.817698e-01 1.796904e-01 1.90029e-01 ) ],
+        [ a essentia:Minimum ;
+            afo:values [ rdf:first 0 ;
+                    rdf:rest [ rdf:first 0 ;
+                            rdf:rest [ rdf:first 0 ;
+                                    rdf:rest [ rdf:first 0 ;
+                                            rdf:rest [ rdf:first 0 ;
+                                                    rdf:rest [ rdf:first 0 ;
+                                                            rdf:rest [ rdf:first 0 ;
+                                                                    rdf:rest [ rdf:first 0 ;
+                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                                                            rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                                                                    rdf:rest [ rdf:first 0 ;
+                                                                                                                                                                                                                                                                                                            rdf:rest () ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:values ( 3.471793e-01 3.51222e-01 3.581434e-01 3.64288e-01 3.390382e-01 2.944255e-01 2.723672e-01 2.808059e-01 3.05193e-01 3.38132e-01 3.330963e-01 3.161359e-01 3.010267e-01 3.207911e-01 3.791521e-01 3.968448e-01 4.267719e-01 4.623351e-01 3.645532e-01 3.202923e-01 3.280249e-01 3.203221e-01 3.022665e-01 3.636853e-01 3.948708e-01 3.259531e-01 3.316346e-01 3.523025e-01 3.484241e-01 3.463585e-01 3.415551e-01 3.270328e-01 3.207863e-01 3.210437e-01 3.158517e-01 3.348468e-01 ) ],
+        [ a essentia:Variance ;
+            afo:values ( 5.783805e-02 5.802532e-02 6.031139e-02 5.871996e-02 5.343562e-02 4.140954e-02 3.810927e-02 3.983944e-02 4.55839e-02 5.418761e-02 5.787909e-02 5.332202e-02 4.501205e-02 4.748245e-02 5.803927e-02 9.919599e-02 1.111898e-01 7.827009e-02 6.017575e-02 5.541575e-02 5.608018e-02 5.235669e-02 4.782986e-02 6.685151e-02 7.843761e-02 5.285925e-02 5.522658e-02 6.047024e-02 6.194671e-02 5.973792e-02 5.750778e-02 5.254706e-02 5.099267e-02 5.503229e-02 5.574486e-02 5.912761e-02 ) ] .
+
+_:0749e0cb-144e-4693-a148-4866be1c0d19 a essentia:SecondDerivativeMean ;
+    afo:value 1.678585e-01 .
+
+_:07df9e8c-ccdd-4740-b6e7-68d01dd20bfe a essentia:Skewness ;
+    afo:feature [ a essentia:SecondDerivativeVariance ;
+            afo:value 7.808008e-01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 5.899881e-01 ],
+        [ a essentia:Median ;
+            afo:value 3.190289e-02 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 9.012004e-01 ],
+        [ a essentia:Variance ;
+            afo:value 1.232618e+00 ],
+        [ a essentia:Maximum ;
+            afo:value 5.669893e+00 ],
+        [ a essentia:Mean ;
+            afo:value 1.841904e-01 ],
+        [ a essentia:Minimum ;
+            afo:value -3.369321e+00 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 3.504436e-01 ] .
+
+_:08cf1fcb-3ae7-450a-9d6d-73c9ae487ca3 a essentia:Variance ;
+    afo:value 5.044263e+01 .
+
+_:0948719f-1dab-42d4-ba21-6252a6f801b2 a essentia:Median ;
+    afo:value 4.221447e-01 .
+
+_:0a0d3e0d-26cf-4fe2-9ee6-8dd72ead9a42 a essentia:SecondDerivativeVariance ;
+    afo:value 8.163181e-06 .
+
+_:0b58782e-c14c-42d2-b8df-d866f7258c78 a essentia:DerivativeVariance ;
+    afo:value 6.160779e+01 .
+
+_:0b8ce445-902d-4658-b4fa-9849d81b0f1a a essentia:SecondDerivativeMean ;
+    afo:value 4.533032e-01 .
+
+_:0b8f3eee-ba06-43ce-ba76-88f020cec0af a essentia:SecondDerivativeMean ;
+    afo:values ( 9.774939e-03 1.236919e-01 9.930804e-01 4.789792e+00 1.13608e+01 1.831023e+01 2.437554e+01 2.511639e+01 2.535689e+01 2.273873e+01 2.579525e+01 2.661102e+01 1.690191e+01 1.182137e+01 1.082871e+01 8.431579e+00 9.531458e+00 1.031352e+01 1.007492e+01 7.489513e+00 7.12297e+00 3.478911e+00 6.773892e+00 3.285312e+00 7.089734e-01 2.198101e-01 2.040804e-01 1.579967e-01 1.037881e-01 7.188866e-02 4.549562e-02 2.840939e-02 1.945385e-02 1.318236e-02 8.21527e-03 4.552941e-03 2.296749e-03 1.189369e-03 5.971962e-04 3.948514e-04 ) .
+
+_:0b9d5dd6-9078-428f-9dd2-60e0d97e3ca3 a essentia:SecondDerivativeMean ;
+    afo:value 5.578459e+00 .
+
+_:0c34f0d7-4f16-468b-88a9-6f5e57547042 a essentia:DerivativeMean ;
+    afo:value 1.034241e-01 .
+
+_:0c4e1519-9a0a-4924-8c13-75796e4e3c9c a essentia:DerivativeVariance ;
+    afo:values ( 6.262263e-02 4.026787e-02 3.459829e-02 1.167329e-02 2.888677e-02 3.078989e-03 ) .
+
+_:0cebaac5-3860-4510-8e2e-ee91ae224b28 rdf:first 9.544799e-03 ;
+    rdf:rest ( 1.171535e-01 9.050299e-01 3.833621e+00 8.494311e+00 1.307172e+01 1.645822e+01 1.769883e+01 1.832941e+01 1.655431e+01 1.857251e+01 1.858576e+01 1.159821e+01 8.144083e+00 7.773124e+00 6.586157e+00 7.766558e+00 8.746834e+00 8.469035e+00 6.278229e+00 5.804236e+00 3.075502e+00 5.533361e+00 2.816323e+00 6.171281e-01 1.745737e-01 1.680673e-01 1.327968e-01 8.630403e-02 5.532424e-02 3.054339e-02 1.629811e-02 1.059088e-02 7.152564e-03 4.459677e-03 2.479854e-03 1.369763e-03 9.566774e-04 6.052344e-04 4.211584e-04 ) .
+
+_:0d24b716-6f71-4d4b-a528-72b1ef90a477 a essentia:DerivativeVariance ;
+    afo:value 2.600314e-01 .
+
+_:0debcf67-4e28-4b38-be52-fe5fc9552d3b a essentia:Maximum ;
+    afo:value 8.571429e-02 .
+
+_:0e3bb095-debc-4892-994e-9c6226d08b20 a essentia:EnergyBand ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0a0d3e0d-26cf-4fe2-9ee6-8dd72ead9a42,
+        [ a essentia:Mean ;
+            afo:value 1.356254e-03 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 1.327478e-03 ],
+        [ a essentia:Maximum ;
+            afo:value 6.251506e-02 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 9.249417e-04 ],
+        [ a essentia:Median ;
+            afo:value 3.316567e-04 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 3.940188e-06 ],
+        [ a essentia:Minimum ;
+            afo:value 1.194033e-21 ],
+        [ a essentia:Variance ;
+            afo:value 7.093042e-06 ] .
+
+_:0e6d7903-c54f-4399-b2f9-6f05c3dfecb8 rdf:first -9.18963e+00 ;
+    rdf:rest ( -8.468287e+00 -9.064697e+00 -9.324901e+00 -1.001107e+01 -1.33785e+01 ) .
+
+_:0eea61ae-16a3-441c-bd78-8d4df25ff02f a essentia:MelBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Skewness ;
+            afo:feature [ a essentia:DerivativeMean ;
+                    afo:value 1.092524e+00 ],
+                [ a essentia:DerivativeVariance ;
+                    afo:value 1.210532e+00 ],
+                [ a essentia:Variance ;
+                    afo:value 3.314269e+00 ],
+                [ a essentia:Median ;
+                    afo:value 2.195576e+00 ],
+                [ a essentia:Maximum ;
+                    afo:value 1.249323e+01 ],
+                [ a essentia:Mean ;
+                    afo:value 2.319462e+00 ],
+                [ a essentia:SecondDerivativeVariance ;
+                    afo:value 2.678386e+00 ],
+                [ a essentia:SecondDerivativeMean ;
+                    afo:value 1.685818e+00 ],
+                [ a essentia:Minimum ;
+                    afo:value -5.098353e+00 ] ] .
+
+_:0f11431a-3abb-4688-95b8-ef5724756739 a essentia:SecondDerivativeMean ;
+    afo:value 4.247544e-02 .
+
+_:0fe496ba-2ab7-4189-b27f-e72914b58bfa a essentia:Median ;
+    afo:value 4.49313e-02 .
+
+_:10794e9d-d146-48ae-8bc3-bc98a61f6cd0 a essentia:SecondDerivativeMean ;
+    afo:value 7.05435e+00 .
+
+_:113c8c5a-ff25-4b3e-be10-f9055dab498b a essentia:FirstPeakSpread ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:DerivativeVariance ;
+            afo:value 0 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 0 ],
+        [ a essentia:Median ;
+            afo:value 5.16129e-01 ],
+        [ a essentia:Minimum ;
+            afo:value 5.16129e-01 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 0 ],
+        [ a essentia:Variance ;
+            afo:value 0 ],
+        [ a essentia:Maximum ;
+            afo:value 5.16129e-01 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 0 ],
+        [ a essentia:Mean ;
+            afo:value 5.16129e-01 ] .
+
+_:116d1057-3546-4919-9a80-bbdf0184aa2f a essentia:Variance ;
+    afo:values ( 1.885171e-02 5.858827e-03 4.641319e-03 4.233992e-03 7.4849e-03 4.016386e-03 ) .
+
+_:1339941a-6877-4b15-928d-5e52e54af798 a essentia:DerivativeVariance ;
+    afo:value 7.451239e+00 .
+
+_:138a730e-f5bd-49f4-904d-1bfe29a6bd20 a essentia:Variance ;
+    afo:value 1.7941e-02 .
+
+_:14427e86-a50e-49c8-b212-d506bfeb9614 a essentia:SecondDerivativeMean ;
+    afo:value 0 .
+
+_:144b0725-315c-49e4-be5f-08764488a485 a essentia:Variance ;
+    afo:value 2.860605e-02 .
+
+_:146bc6d6-aa2f-4782-8688-ab268d4c3742 a essentia:SecondDerivativeVariance ;
+    afo:value 1.687692e+01 .
+
+_:14b8002c-64d6-4a1c-af33-aca9a1b51275 a essentia:Median ;
+    afo:value 2.689796e+01 .
+
+_:15addaaf-439d-4852-a2e5-c94bc8fb2bc6 a tl:Timeline ;
+    tl:interval _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e .
+
+_:1676c48f-a9bf-41fa-9b0e-cb94f9a9b365 a essentia:SecondDerivativeVariance ;
+    afo:value 1.907991e-02 .
+
+_:1684f5ef-d261-4c2e-abd1-12df64a2fcc0 a essentia:Median ;
+    afo:value 8.497464e+00 .
+
+_:1731af29-9837-4b67-9e0a-5d69ca004d81 a essentia:Spread ;
+    afo:feature [ a essentia:Median ;
+            afo:value 1.259701e+01 ],
+        [ a essentia:Maximum ;
+            afo:value 1.568862e+02 ],
+        [ a essentia:Mean ;
+            afo:value 2.02883e+01 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 2.690526e+02 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.068302e+02 ],
+        [ a essentia:Minimum ;
+            afo:value 3.612314e-01 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 1.409647e+01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 8.571553e+00 ],
+        [ a essentia:Variance ;
+            afo:value 4.492326e+02 ] .
+
+_:17be8704-9dd6-4fd8-a9b8-890521787b72 a essentia:DerivativeVariance ;
+    afo:value 2.63485e-04 .
+
+_:18986a26-ca95-481d-ae2a-65e8bc9a1557 a essentia:Median ;
+    afo:value 1.063817e-02 .
+
+_:19234371-defb-4dd9-8f45-8f28dac1c45a a essentia:SecondDerivativeVariance ;
+    afo:value 3.392443e-02 .
+
+_:194caf9f-8043-4975-8424-7a97e330f9c7 a essentia:Variance ;
+    afo:value 1.014774e-03 .
+
+_:19bdda9b-0fd9-44b8-ae35-8100f7390efe a essentia:Maximum ;
+    afo:value 5.142857e-02 .
+
+_:19c7345d-42f7-4c12-974b-1282c5929be3 a essentia:Median ;
+    afo:values ( -8.162054e+00 -7.90933e+00 -8.298497e+00 -8.529199e+00 -9.480467e+00 -1.285517e+01 ) .
+
+_:1ac34145-5b18-4dfa-8820-edcddf1c2a8c a essentia:Mean ;
+    afo:value 4.115391e-01 .
+
+_:1ad99ea6-5822-4595-8b80-7ed2fde6051b a essentia:TuningFrequency ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 4.367084e+02 .
+
+_:1ae3082f-48f7-45f3-8cec-b16c3a6e204a a essentia:BarkBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Mean ;
+            afo:values ( 4.775608e-05 4.254961e-04 9.854003e-04 1.757068e-03 3.681678e-03 2.181038e-03 1.269241e-03 7.288045e-04 8.141379e-04 2.833889e-04 2.048009e-04 1.563255e-04 1.63655e-04 1.86396e-04 1.199315e-04 1.240069e-04 5.107198e-05 1.056968e-04 2.047296e-05 3.635492e-06 3.849162e-06 2.278051e-06 1.188044e-06 6.80851e-07 6.313559e-07 7.481367e-07 1.589046e-05 ) ],
+        [ a essentia:Maximum ;
+            afo:values ( 1.795436e-03 9.443261e-03 3.538286e-02 1.267714e-01 1.671094e-01 2.326949e-01 1.596026e-01 9.892686e-02 9.161578e-02 2.682266e-02 1.722389e-02 4.117931e-02 1.651373e-02 6.348236e-03 4.518909e-03 1.138698e-02 4.921994e-03 4.216625e-03 3.892698e-03 2.218237e-03 2.891953e-03 1.174778e-03 2.478443e-04 5.932201e-05 5.757682e-05 6.924087e-05 1.030176e-03 ) ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:values ( 7.188273e-05 4.499044e-04 1.184584e-03 2.426963e-03 4.762911e-03 3.117729e-03 1.783485e-03 1.050452e-03 1.182877e-03 4.336609e-04 3.049914e-04 2.092149e-04 2.099724e-04 2.294538e-04 1.490173e-04 1.584436e-04 6.13364e-05 1.294436e-04 2.462489e-05 4.761213e-06 4.586629e-06 2.843165e-06 1.694556e-06 1.235072e-06 1.16618e-06 1.245034e-06 1.521028e-05 ) ],
+        [ a essentia:Median ;
+            afo:values ( 1.048173e-05 1.316157e-04 1.182643e-04 1.505496e-04 1.903606e-04 2.743411e-05 2.277965e-05 1.261878e-05 1.402844e-05 1.306959e-05 1.170502e-05 1.828041e-05 2.122245e-05 2.915872e-05 1.25958e-05 9.107755e-06 5.443399e-06 1.596094e-05 4.050487e-06 5.051864e-07 4.57088e-07 3.302687e-07 1.270023e-07 3.710298e-08 3.0742e-08 6.417293e-08 4.089285e-06 ) ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:values ( 2.580699e-08 6.397497e-07 7.310074e-06 3.720766e-05 1.235494e-04 1.147971e-04 5.437752e-05 1.48263e-05 2.061475e-05 2.600789e-06 9.154817e-07 8.610957e-07 3.232124e-07 2.467841e-07 1.269181e-07 3.1096e-07 3.849456e-08 6.809521e-08 7.742629e-09 2.739774e-09 2.788076e-09 3.001092e-10 3.046793e-11 1.736e-11 1.592368e-11 1.643015e-11 1.01752e-09 ) ],
+        [ a essentia:Minimum ;
+            afo:values ( 3.855692e-25 1.515855e-24 6.235722e-25 2.190532e-24 6.879131e-24 6.039478e-24 1.023735e-23 7.245499e-24 1.114822e-23 1.360123e-23 1.582546e-23 2.174322e-23 2.744258e-23 3.716075e-23 4.587813e-23 3.29912e-23 6.081557e-23 8.842303e-23 1.217175e-22 1.378824e-22 2.35231e-22 2.641229e-22 3.141121e-22 5.790146e-22 9.342245e-22 1.203873e-21 1.904625e-21 ) ],
+        [ a essentia:Variance ;
+            afo:values ( 1.091929e-08 5.054948e-07 5.806023e-06 2.340665e-05 9.374716e-05 7.314743e-05 3.091914e-05 1.070253e-05 1.120389e-05 1.251733e-06 5.318963e-07 4.570886e-07 2.077766e-07 1.619695e-07 8.995476e-08 2.494594e-07 3.863964e-08 4.736932e-08 5.461225e-09 1.962662e-09 3.09655e-09 3.541147e-10 3.310386e-11 7.319493e-12 6.494264e-12 8.355199e-12 1.31054e-09 ) ],
+        [ a essentia:DerivativeVariance ;
+            afo:values ( 1.058396e-08 2.79806e-07 3.437633e-06 1.715571e-05 5.98918e-05 5.445255e-05 2.516487e-05 7.3673e-06 9.314213e-06 1.144434e-06 4.076195e-07 4.02512e-07 1.510667e-07 1.063613e-07 5.731039e-08 1.574859e-07 2.079364e-08 3.025822e-08 3.951416e-09 1.359686e-09 1.658162e-09 1.765828e-10 1.75089e-11 7.441819e-12 6.771552e-12 7.333287e-12 6.001085e-10 ) ],
+        [ a essentia:DerivativeMean ;
+            afo:values ( 4.36793e-05 2.909047e-04 7.804239e-04 1.550883e-03 3.164927e-03 2.07828e-03 1.201486e-03 7.004881e-04 7.811566e-04 2.805311e-04 1.955541e-04 1.348417e-04 1.360299e-04 1.482964e-04 9.659058e-05 1.046015e-04 4.143631e-05 8.521099e-05 1.641022e-05 3.195947e-06 3.154918e-06 1.930757e-06 1.097996e-06 7.50586e-07 7.069232e-07 7.708978e-07 1.074864e-05 ) ] .
+
+_:1aea49ff-cb97-4d05-9653-906a69d7ccfb a essentia:Minimum ;
+    afo:value 6.251844e-11 .
+
+_:1aebdda6-d5f2-43bd-b9f5-1d8dcd7e05d2 rdf:first -2.340489e+02 ;
+    rdf:rest ( 1.172995e+02 -1.08441e+02 1.161996e+00 -1.088675e+01 -1.863369e+01 -1.568751e+01 -1.516457e+01 -6.838965e+00 -1.297591e+01 -8.803467e+00 -2.540497e+00 -1.494982e+01 ) .
+
+_:1b223fa4-0b20-4b7c-8b38-59885a944a8f a essentia:Decrease ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Mean ;
+            afo:value -3.383933e-09 ],
+        [ a essentia:Maximum ;
+            afo:value 1.98984e-28 ],
+        [ a essentia:Median ;
+            afo:value -7.658461e-10 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 3.441153e-17 ],
+        [ a essentia:Minimum ;
+            afo:value -8.480172e-08 ],
+        [ a essentia:Variance ;
+            afo:value 4.182476e-17 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.918381e-17 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 3.08166e-09 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 2.257783e-09 ] .
+
+_:1b36de40-f29c-42b4-b801-dc2fddb96714 a essentia:Maximum ;
+    afo:value 1.570898e+01 .
+
+_:1b3e878b-2386-408d-8f5f-b573b17d033f a essentia:Minimum ;
+    afo:value -1 .
+
+_:1b64642c-203b-457a-9d17-073876824014 a essentia:Median ;
+    afo:value 1.456977e-01 .
+
+_:1bcb46d3-ad22-49ef-9832-64b773c6fc3c a essentia:Variance ;
+    afo:value 5697553 .
+
+_:1cfd8850-d1ce-44e6-a53e-5462a4267d9b a essentia:Key ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value "D" .
+
+_:1d0d7bdc-2125-4c4f-b5b8-498ca4341d62 a essentia:Variance ;
+    afo:value 6.44593e-04 .
+
+_:1d15c32d-e015-4281-9e9d-8d2fa95e1171 a essentia:FlatnessDB ;
+    afo:feature [ a essentia:Minimum ;
+            afo:value 2.121235e-05 ],
+        [ a essentia:Variance ;
+            afo:value 9.722246e-03 ],
+        [ a essentia:Median ;
+            afo:value 2.769211e-01 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 7.24704e-02 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 4.736392e-02 ],
+        [ a essentia:Maximum ;
+            afo:value 6.018866e-01 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 4.185253e-03 ],
+        [ a essentia:Mean ;
+            afo:value 2.716301e-01 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.981418e-03 ] .
+
+_:1d6bbb54-4022-4b3c-b549-347c7cf44a96 a essentia:DerivativeVariance ;
+    afo:value 6.735186e+00 .
+
+_:1e071efe-68dc-4809-9329-bf9e5f045e00 a essentia:DerivativeVariance ;
+    afo:value 0 .
+
+_:1ebdb392-f021-459a-aa83-c47d1ae1611a a essentia:DerivativeMean ;
+    afo:value 2.858634e+00 .
+
+_:1f0172d5-6a89-45b6-956b-e9b25ab56125 a essentia:RMS ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Mean ;
+            afo:value 2.45967e-03 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 2.507213e-06 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 9.960192e-04 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.61919e-06 ],
+        [ a essentia:Variance ;
+            afo:value 6.972656e-06 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 1.258593e-03 ],
+        [ a essentia:Maximum ;
+            afo:value 1.803425e-02 ],
+        [ a essentia:Median ;
+            afo:value 1.749899e-03 ],
+        [ a essentia:Minimum ;
+            afo:value 3.082972e-12 ] .
+
+_:1f031c21-11e5-4c4f-9141-26d3f6f70c1e a essentia:Median ;
+    afo:value 1.669911e+01 .
+
+_:2081000f-c7fd-4262-a66b-4363ede37d4c a essentia:KeyStrength ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 5.55543e-01 .
+
+_:20e4c7a8-47f6-4787-b12d-0efac07b168c a essentia:DerivativeVariance ;
+    afo:value 1.168696e+02 .
+
+_:20ed23af-dac6-43bf-bdf4-d17d0f86d16b a essentia:ZeroCrossingRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Maximum ;
+            afo:value 5.302734e-01 ],
+        [ a essentia:Minimum ;
+            afo:value 2.929688e-03 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 1.91054e-04 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 1.056871e-02 ],
+        [ a essentia:Variance ;
+            afo:value 4.093303e-03 ],
+        [ a essentia:Median ;
+            afo:value 3.662109e-02 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.416559e-04 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 1.222705e-02 ],
+        [ a essentia:Mean ;
+            afo:value 5.305054e-02 ] .
+
+_:2110a9ea-0012-4a0f-b0fb-e17aa6803fe4 a essentia:Maximum ;
+    afo:value 7.289559e-01 .
+
+_:2132fd1b-91ef-4df6-9372-9aa5a40da49e a essentia:FlatnessDB ;
+    afo:feature [ a essentia:Variance ;
+            afo:value 4.478814e-03 ],
+        [ a essentia:Median ;
+            afo:value 2.031328e-01 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.21484e-03 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 2.825678e-03 ],
+        [ a essentia:Mean ;
+            afo:value 2.002848e-01 ],
+        [ a essentia:Maximum ;
+            afo:value 4.338039e-01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 3.67139e-02 ],
+        [ a essentia:Minimum ;
+            afo:value 6.935566e-02 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 5.653388e-02 ] .
+
+_:2165da60-715a-4c32-9415-ad2e80a6de72 a essentia:DerivativeMean ;
+    afo:value 0 .
+
+_:224fecdd-4329-4d70-b368-78b22b0a6519 a essentia:Mean ;
+    afo:value 1.054158e-02 .
+
+_:22692074-5997-490b-b5af-9fa2ec80ce6a a essentia:SecondDerivativeMean ;
+    afo:value 7.935256e+02 .
+
+_:22a374df-4827-4602-be84-16b7a4e4ea0f a essentia:SecondDerivativeMean ;
+    afo:value 1.315269e+01 .
+
+_:22e628ea-586a-4c47-b2b0-bd8d79413910 a essentia:DerivativeVariance ;
+    afo:value 1.229871e+01 .
+
+_:23004870-fa80-4c87-a614-fb91146bf76e a essentia:SecondDerivativeVariance ;
+    afo:value 3.181152e+01 .
+
+_:24e3edd3-f410-4bf2-9767-146ca18c1085 a essentia:DerivativeVariance ;
+    afo:value 6.239563e+01 .
+
+_:254a71d4-e40c-4dd8-99ec-35c581a55ea5 a essentia:Variance ;
+    afo:value 0 .
+
+_:25bd3a87-0684-449d-a449-7473011490b7 a essentia:SecondDerivativeMean ;
+    afo:value 0 .
+
+_:25e58081-f37a-49b9-a366-9077b02003e1 a essentia:Variance ;
+    afo:value 9.796731e-01 .
+
+_:25f96187-3281-4b05-bd0d-dcfccbf2cc4c a essentia:Variance ;
+    afo:value 3.403149e+02 .
+
+_:2677ee30-5dd0-4b19-9d4c-4aed84b4d2fc a essentia:THPCP ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value ( 1 8.075237e-01 6.383718e-01 5.986884e-01 6.079876e-01 5.907845e-01 5.916992e-01 7.901814e-01 8.50414e-01 6.689968e-01 6.25777e-01 6.759693e-01 6.918059e-01 6.715532e-01 6.475002e-01 6.171953e-01 6.13063e-01 6.308569e-01 6.425413e-01 6.666069e-01 6.635965e-01 6.54382e-01 6.708105e-01 6.593018e-01 6.048594e-01 5.227618e-01 4.968159e-01 5.189171e-01 5.6479e-01 6.278307e-01 6.461484e-01 6.115006e-01 5.744697e-01 5.821386e-01 6.8296e-01 9.184199e-01 ) .
+
+_:26a62004-9217-4454-9aea-5ba298e642d9 a essentia:Median ;
+    afo:value 3.138699e-03 .
+
+_:26b68538-d8d8-4fb1-8dae-6a72fac5ea4a a essentia:ChordsNumberRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 4.222553e-03 .
+
+_:26eb807a-4b08-44a1-b3bd-77f25ed18519 a essentia:Median ;
+    afo:value 3.160698e-01 .
+
+_:270c24df-05df-44f7-991d-ee4b4b698327 a essentia:DerivativeVariance ;
+    afo:value 1.264533e-03 .
+
+_:283e3316-58af-4104-83b9-256126ad6011 a essentia:SecondDerivativeMean ;
+    afo:value 0 .
+
+_:28918ef8-a453-4647-bfc2-64bf94faed01 a essentia:Variance ;
+    afo:value 3.40178e-03 .
+
+_:2a0a19f0-cf42-4501-aaf8-245d051e38c9 a essentia:Maximum ;
+    afo:value 1 .
+
+_:2b0428ca-0afb-4725-907a-e4cc6f79f462 rdf:first -9.81311e-01 ;
+    rdf:rest ( -9.910973e-01 -9.931778e-01 -9.837784e-01 -9.84455e-01 -9.64164e-01 ) .
+
+_:2b562dc7-28c7-42d0-acee-d976fc1c2a69 a essentia:Median ;
+    afo:value 1.66965e+00 .
+
+_:2b748acb-96c6-499d-bf17-2dc1a4456529 rdf:first -2.493635e-01 ;
+    rdf:rest ( -4.304299e-01 -5.107476e-01 -4.828757e-01 -5.432193e-01 -3.728391e-01 ) .
+
+_:2bb7e45f-d8c6-4104-abf9-daf7b5e575a7 a essentia:ERBBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Kurtosis ;
+            afo:feature _:146bc6d6-aa2f-4782-8688-ab268d4c3742,
+                _:1d6bbb54-4022-4b3c-b549-347c7cf44a96,
+                _:26eb807a-4b08-44a1-b3bd-77f25ed18519,
+                [ a essentia:DerivativeMean ;
+                    afo:value 1.848811e+00 ],
+                [ a essentia:SecondDerivativeMean ;
+                    afo:value 2.988667e+00 ],
+                [ a essentia:Maximum ;
+                    afo:value 4.213185e+01 ],
+                [ a essentia:Mean ;
+                    afo:value 1.326738e+00 ],
+                [ a essentia:Variance ;
+                    afo:value 1.017626e+01 ],
+                [ a essentia:Minimum ;
+                    afo:value -1.891436e+00 ] ] .
+
+_:2bdc4c9e-ba5c-4160-bb7e-99bafa594860 a essentia:SecondDerivativeVariance ;
+    afo:value 9.109945e-01 .
+
+_:2c3081ea-26bc-4827-ba63-eb2b71ef03dc rdf:first 13 ;
+    rdf:rest ( 13 ) .
+
+_:2c7b95ea-4e4a-48aa-ab09-2ebbdb97f254 a essentia:DerivativeVariance ;
+    afo:value 0 .
+
+_:2c9f3af6-bcf9-4893-9f76-70d04e275734 a essentia:SecondDerivativeMean ;
+    afo:value 0 .
+
+_:2cddbed4-8d09-4a5a-93fb-c6eb3949a668 a essentia:SecondDerivativeVariance ;
+    afo:value 2.411149e-03 .
+
+_:2ce552e2-0717-4013-8aa2-a8c349a64532 a essentia:Maximum ;
+    afo:value 3.333651e-01 .
+
+_:2d2ad526-3512-4b65-b5d2-a64a1ae6ede3 rdf:first 3.977551e-01 ;
+    rdf:rest ( 2.937458e-01 1.704803e-01 9.05392e-02 8.036783e-02 2.028216e-02 ) .
+
+_:2d3b6b55-48b0-4de1-894c-50d4501aec63 a essentia:MelBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Crest ;
+            afo:feature _:10794e9d-d146-48ae-8bc3-bc98a61f6cd0,
+                _:23004870-fa80-4c87-a614-fb91146bf76e,
+                [ a essentia:Mean ;
+                    afo:value 1.446678e+01 ],
+                [ a essentia:DerivativeMean ;
+                    afo:value 4.293477e+00 ],
+                [ a essentia:DerivativeVariance ;
+                    afo:value 1.211562e+01 ],
+                [ a essentia:Minimum ;
+                    afo:value 1.076383e+00 ],
+                [ a essentia:Variance ;
+                    afo:value 3.014592e+01 ],
+                [ a essentia:Maximum ;
+                    afo:value 3.672651e+01 ],
+                [ a essentia:Median ;
+                    afo:value 1.432213e+01 ] ] .
+
+_:2d98fa04-0da0-46a1-9958-7357ef3dd598 a essentia:HFC ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0b58782e-c14c-42d2-b8df-d866f7258c78,
+        _:0b9d5dd6-9078-428f-9dd2-60e0d97e3ca3,
+        [ a essentia:Mean ;
+            afo:value 6.353854e+00 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 1.097067e+02 ],
+        [ a essentia:Maximum ;
+            afo:value 1.466856e+02 ],
+        [ a essentia:Minimum ;
+            afo:value 1.077376e-16 ],
+        [ a essentia:Variance ;
+            afo:value 1.340654e+02 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 4.119001e+00 ],
+        [ a essentia:Median ;
+            afo:value 1.781771e+00 ] .
+
+_:2dcb5c36-5531-4a5a-8628-5b1c789c46f5 a essentia:MelBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:1731af29-9837-4b67-9e0a-5d69ca004d81 .
+
+_:2f939019-ced7-4597-a87a-f584843e57c4 a essentia:DerivativeMean ;
+    afo:value 0 .
+
+_:2f93f32d-1285-40a5-82c4-a54d0a62bdb2 a essentia:RollOff ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:1bcb46d3-ad22-49ef-9832-64b773c6fc3c,
+        _:22692074-5997-490b-b5af-9fa2ec80ce6a,
+        [ a essentia:Median ;
+            afo:value 7.536621e+02 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 8.701103e+05 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 3.978596e+05 ],
+        [ a essentia:Mean ;
+            afo:value 1.34868e+03 ],
+        [ a essentia:Minimum ;
+            afo:value 4.306641e+01 ],
+        [ a essentia:Maximum ;
+            afo:value 1.957368e+04 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 4.814836e+02 ] .
+
+_:31a5ba5f-5eb8-4f9d-b0e7-d05aafe46410 a essentia:SecondDerivativeVariance ;
+    afo:value 1.635225e+00 .
+
+_:3205a05c-ed27-40f5-a601-0839cb648465 rdf:first 9.51854e-02 ;
+    rdf:rest ( 7.517099e-02 6.455027e-02 5.534841e-02 6.323688e-02 6.236045e-02 ) .
+
+_:3246bb41-82d6-4669-9784-6149e22f8da9 a essentia:BarkBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Spread ;
+            afo:feature [ a essentia:DerivativeMean ;
+                    afo:value 6.70597e+00 ],
+                [ a essentia:Minimum ;
+                    afo:value 2.961468e-01 ],
+                [ a essentia:SecondDerivativeVariance ;
+                    afo:value 1.32685e+02 ],
+                [ a essentia:Variance ;
+                    afo:value 2.047897e+02 ],
+                [ a essentia:Maximum ;
+                    afo:value 1.074746e+02 ],
+                [ a essentia:SecondDerivativeMean ;
+                    afo:value 1.082062e+01 ],
+                [ a essentia:DerivativeVariance ;
+                    afo:value 5.360108e+01 ],
+                [ a essentia:Median ;
+                    afo:value 1.151803e+01 ],
+                [ a essentia:Mean ;
+                    afo:value 1.706034e+01 ] ] .
+
+_:34dd6068-8112-4c7a-a6a6-7cc7d15f44f3 a essentia:NonTemperedEnergyRatio ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 8.890147e-01 .
+
+_:35db811d-dd6c-49b7-a37a-4e4e87e07864 rdf:first 1.220643e-22 ;
+    rdf:rest ( 3.222817e-22 2.120706e-21 5.498665e-21 9.624345e-21 1.647764e-20 3.307289e-20 6.504131e-20 1.229978e-19 1.860421e-19 2.467074e-19 3.118549e-19 5.146498e-19 3.755121e-19 9.959905e-19 1.052022e-18 1.699345e-18 1.81603e-18 2.078859e-18 2.021147e-18 3.186628e-18 4.053523e-18 5.277679e-18 5.654547e-18 5.287882e-18 7.151096e-18 8.575294e-18 9.866301e-18 9.47683e-18 1.051873e-17 8.949105e-18 9.787911e-18 9.180654e-18 8.930708e-18 6.53415e-18 3.707712e-18 2.262268e-18 9.557259e-19 2.465294e-19 2.641385e-20 ) .
+
+_:36700872-46a8-49a3-8787-121cf6496a9a a essentia:Skewness ;
+    afo:feature _:1b36de40-f29c-42b4-b801-dc2fddb96714,
+        _:2b562dc7-28c7-42d0-acee-d976fc1c2a69,
+        _:31a5ba5f-5eb8-4f9d-b0e7-d05aafe46410,
+        [ a essentia:DerivativeMean ;
+            afo:value 9.017396e-01 ],
+        [ a essentia:Mean ;
+            afo:value 1.7806e+00 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 6.932051e-01 ],
+        [ a essentia:Variance ;
+            afo:value 1.835093e+00 ],
+        [ a essentia:Minimum ;
+            afo:value -2.515481e+00 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 1.417688e+00 ] .
+
+_:3681fd62-9840-4a9d-b2b0-959b6a71058a a essentia:Variance ;
+    afo:values ( 8.698316e+00 9.693774e+00 8.534493e+00 8.023644e+00 6.229152e+00 6.340835e+00 ) .
+
+_:36ad5283-5a5a-4fa7-a057-82efc9f2c53f a essentia:DerivativeVariance ;
+    afo:value 0 .
+
+_:36bc481f-3f46-4921-9012-8167800f65d3 a essentia:DerivativeVariance ;
+    afo:value 1.374476e-05 .
+
+_:370b7b6b-f2bd-401a-85d2-ee3d57b7897e a essentia:SecondDerivativeMean ;
+    afo:values _:3205a05c-ed27-40f5-a601-0839cb648465 .
+
+_:37628792-2e7a-420b-8f52-a4b244510bae a essentia:Mean ;
+    afo:value 1.064617e+01 .
+
+_:37db0045-7d29-4959-a04a-12541e55608b rdf:first 4.335786e+04 ;
+    rdf:rest ( 6.230977e+03 -1.29947e+03 -2.204926e+03 9.37184e+01 -4.841297e+02 -2.524881e+03 -4.693251e+02 -1.430822e+03 -1.340446e+03 3.073662e+01 -9.435016e+02 -2.827532e+02 6.230977e+03 2.514579e+03 4.017934e+02 -3.974105e+02 -1.83741e+01 -2.617105e+02 -4.070079e+02 -1.206345e+02 -2.935559e+02 -2.282136e+02 5.154656e+01 -2.620947e+02 -6.747184e+01 -1.29947e+03 4.017934e+02 1.098094e+03 2.555177e+02 -2.456148e+02 1.624342e+02 -1.944074e+02 1.392149e+02 -1.952505e+02 1.141985e+02 1.985772e+01 -7.371319e+01 -3.502246e+01 -2.204926e+03 -3.974105e+02 2.555177e+02 5.346561e+02 2.099104e+02 1.559502e+02 1.287923e+02 -1.975871e+01 9.147385e+00 7.531087e+01 -1.052505e+01 6.036597e+01 -4.257461e+01 9.37184e+01 -1.83741e+01 -2.456148e+02 2.099104e+02 7.281445e+02 1.906354e+02 7.32823e+01 -1.898625e+02 -4.707588e+01 -1.583263e+02 5.801964e+00 -2.973948e+01 2.985773e+00 -4.841297e+02 -2.617105e+02 1.624342e+02 1.559502e+02 1.906354e+02 4.662231e+02 4.009561e+01 -1.962243e+01 -1.603867e+02 -1.456539e+01 -6.696069e+01 -8.973382e+00 1.856923e+01 -2.524881e+03 -4.070079e+02 -1.944074e+02 1.287923e+02 7.32823e+01 4.009561e+01 3.890512e+02 -2.608873e+01 1.323798e+02 3.433549e+01 -2.949204e+01 1.037869e+02 1.2334e+01 -4.693251e+02 -1.206345e+02 1.392149e+02 -1.975871e+01 -1.898625e+02 -1.962243e+01 -2.608873e+01 1.790297e+02 4.296305e+01 7.354696e+01 1.633047e+01 -1.847263e+00 1.611906e+01 -1.430822e+03 -2.935559e+02 -1.952505e+02 9.147385e+00 -4.707588e+01 -1.603867e+02 1.323798e+02 4.296305e+01 2.647431e+02 9.852145e+01 6.417965e+00 6.74035e+01 -7.432898e+00 -1.340446e+03 -2.282136e+02 1.141985e+02 7.531087e+01 -1.583263e+02 -1.456539e+01 3.433549e+01 7.354696e+01 9.852145e+01 1.746947e+02 3.85662e+01 2.699114e+01 -4.434568e+00 3.073662e+01 5.154656e+01 1.985772e+01 -1.052505e+01 5.801964e+00 -6.696069e+01 -2.949204e+01 1.633047e+01 6.417965e+00 3.85662e+01 9.227608e+01 7.564057e+00 -1.344364e+01 -9.435016e+02 -2.620947e+02 -7.371319e+01 6.036597e+01 -2.973948e+01 -8.973382e+00 1.037869e+02 -1.847263e+00 6.74035e+01 2.699114e+01 7.564057e+00 1.02609e+02 2.441652e+01 -2.827532e+02 -6.747184e+01 -3.502246e+01 -4.257461e+01 2.985773e+00 1.856923e+01 1.2334e+01 1.611906e+01 -7.432898e+00 -4.434568e+00 -1.344364e+01 2.441652e+01 9.56072e+01 ) .
+
+_:3a3ac83c-4604-4d85-8256-2e1ede184a9e a essentia:Minimum ;
+    afo:value 1.641377e-01 .
+
+_:3a3b6982-176a-4d15-bab5-ce37b6cda043 a essentia:BeatsCount ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 351 .
+
+_:3b4ecd15-74ee-4f9b-bb7a-97f7ee2a6d92 a essentia:FirstPeakBPM ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:283e3316-58af-4104-83b9-256126ad6011,
+        _:36ad5283-5a5a-4fa7-a057-82efc9f2c53f,
+        [ a essentia:Minimum ;
+            afo:value 136 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 0 ],
+        [ a essentia:Median ;
+            afo:value 136 ],
+        [ a essentia:Mean ;
+            afo:value 136 ],
+        [ a essentia:Maximum ;
+            afo:value 136 ],
+        [ a essentia:Variance ;
+            afo:value 0 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 0 ] .
+
+_:3bf539a1-4f7b-4153-a644-009d1156b066 a essentia:SecondDerivativeVariance ;
+    afo:value 2.018748e+01 .
+
+_:3c05f718-a5a6-49cb-a42b-178096219406 a essentia:Skewness ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:006553f1-aa40-4035-942e-49edcb8dcee9,
+        _:0d24b716-6f71-4d4b-a528-72b1ef90a477,
+        _:25e58081-f37a-49b9-a366-9077b02003e1,
+        [ a essentia:Median ;
+            afo:value 2.719622e+00 ],
+        [ a essentia:Maximum ;
+            afo:value 8.499484e+00 ],
+        [ a essentia:Minimum ;
+            afo:value -9.426785e-02 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 6.494285e-01 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 7.460684e-01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 4.739421e-01 ] .
+
+_:3c290ffb-a5db-482c-90a4-aa6aad598d7e a essentia:DerivativeMean ;
+    afo:value 0 .
+
+_:3d5f3f0a-6042-46d2-a48f-bf39723ece0b a essentia:Mean ;
+    afo:value 1.910276e+01 .
+
+_:3e3c6d80-7214-43d5-bbba-39fb65944a45 a essentia:Mean ;
+    afo:values ( -6.825407e-01 -8.298315e-01 -8.357983e-01 -8.290482e-01 -7.983829e-01 -7.949787e-01 ) .
+
+_:3ea138a4-d9d9-481d-90d0-06704eebf00b rdf:first -2.844997e+01 ;
+    rdf:rest ( -2.80545e+01 -2.787393e+01 -2.7712e+01 -2.751111e+01 -2.742419e+01 ) .
+
+_:3f0433ee-ade1-4950-a3dc-092311b454eb a essentia:Spread ;
+    afo:feature _:14b8002c-64d6-4a1c-af33-aca9a1b51275,
+        _:22a374df-4827-4602-be84-16b7a4e4ea0f,
+        [ a essentia:Mean ;
+            afo:value 2.670868e+01 ],
+        [ a essentia:Variance ;
+            afo:value 1.763653e+02 ],
+        [ a essentia:Minimum ;
+            afo:value 9.163426e-01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 8.330803e+00 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 6.780075e+01 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 1.586273e+02 ],
+        [ a essentia:Maximum ;
+            afo:value 8.472122e+01 ] .
+
+_:3f1f8660-6b52-4461-8813-1680a1bfd359 a essentia:Median ;
+    afo:value 6.42265e-01 .
+
+_:3f8eb2ce-1630-49c9-a9ce-a058baef22d1 a essentia:Median ;
+    afo:value 5.212607e-06 .
+
+_:3fb54021-7b2b-4ce2-a5cb-46c6df36fbb0 a essentia:SecondDerivativeMean ;
+    afo:value 5.679582e+00 .
+
+_:408896ee-fbd3-48d0-856f-3d80fd296123 a essentia:Minimum ;
+    afo:values _:3ea138a4-d9d9-481d-90d0-06704eebf00b .
+
+_:40923574-3d16-4b90-b466-de18258c9466 a essentia:Mean ;
+    afo:value 1 .
+
+_:40cc060a-cb3e-42f2-af69-f374c3abf357 a essentia:DerivativeVariance ;
+    afo:value 1.444255e-02 .
+
+_:41c0826b-69cf-483d-ad89-4d66a8aefad3 a essentia:GFCC ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Covariance ;
+            afo:dimensions ( 13 13 ) ;
+            afo:values _:37db0045-7d29-4959-a04a-12541e55608b ],
+        [ a essentia:InverseCovariance ;
+            afo:dimensions ( 13 13 ) ;
+            afo:values ( 1.322196e-04 -2.999903e-04 5.91134e-04 -2.554631e-04 3.599217e-04 -3.58294e-04 7.48913e-04 -1.386094e-04 1.127952e-04 5.403348e-04 -2.564005e-04 8.20445e-05 2.440345e-04 -2.999903e-04 1.658889e-03 -2.070618e-03 1.252661e-03 -8.976186e-04 1.509189e-03 -1.80879e-03 1.2437e-03 -9.829436e-05 -3.466728e-04 9.409187e-05 1.24275e-03 -4.864722e-04 5.91134e-04 -2.070618e-03 5.574401e-03 -4.751088e-03 4.794226e-03 -4.036531e-03 4.031088e-03 -5.719287e-04 -1.025406e-03 4.737192e-03 -5.025001e-03 3.968118e-03 -1.156041e-03 -2.554631e-04 1.252661e-03 -4.751088e-03 1.540573e-02 -1.727466e-02 1.237432e-02 -2.57016e-03 -9.587853e-03 1.911555e-02 -2.654649e-02 2.715211e-02 -2.442102e-02 1.564202e-02 3.599217e-04 -8.976186e-04 4.794226e-03 -1.727466e-02 2.538325e-02 -1.886507e-02 2.500061e-03 1.666379e-02 -2.872665e-02 3.903859e-02 -4.02219e-02 3.458895e-02 -2.067777e-02 -3.58294e-04 1.509189e-03 -4.036531e-03 1.237432e-02 -1.886507e-02 1.871058e-02 -3.303545e-03 -1.192554e-02 2.520642e-02 -3.054221e-02 3.258742e-02 -2.479242e-02 1.488586e-02 7.48913e-04 -1.80879e-03 4.031088e-03 -2.57016e-03 2.500061e-03 -3.303545e-03 8.897537e-03 -2.255677e-04 -1.710061e-03 3.747969e-03 -1.201479e-03 -1.926919e-03 1.088306e-03 -1.386094e-04 1.2437e-03 -5.719287e-04 -9.587853e-03 1.666379e-02 -1.192554e-02 -2.255677e-04 2.144614e-02 -2.279921e-02 2.489961e-02 -2.86474e-02 2.614693e-02 -1.712539e-02 1.127952e-04 -9.829436e-05 -1.025406e-03 1.911555e-02 -2.872665e-02 2.520642e-02 -1.710061e-03 -2.279921e-02 4.758812e-02 -5.159271e-02 5.202397e-02 -4.428025e-02 2.839718e-02 5.403348e-04 -3.466728e-04 4.737192e-03 -2.654649e-02 3.903859e-02 -3.054221e-02 3.747969e-03 2.489961e-02 -5.159271e-02 7.418424e-02 -6.867671e-02 5.573552e-02 -3.316225e-02 -2.564005e-04 9.409187e-05 -5.025001e-03 2.715211e-02 -4.02219e-02 3.258742e-02 -1.201479e-03 -2.86474e-02 5.202397e-02 -6.867671e-02 8.141331e-02 -6.079662e-02 3.730348e-02 8.20445e-05 1.24275e-03 3.968118e-03 -2.442102e-02 3.458895e-02 -2.479242e-02 -1.926919e-03 2.614693e-02 -4.428025e-02 5.573552e-02 -6.079662e-02 6.855814e-02 -3.564099e-02 2.440345e-04 -4.864722e-04 -1.156041e-03 1.564202e-02 -2.067777e-02 1.488586e-02 1.088306e-03 -1.712539e-02 2.839718e-02 -3.316225e-02 3.730348e-02 -3.564099e-02 3.289839e-02 ) ],
+        [ a essentia:Mean ;
+            afo:values _:1aebdda6-d5f2-43bd-b9f5-1d8dcd7e05d2 ] .
+
+_:420592d1-653d-4fdf-a5ce-d99276d24cfd rdf:first 2.192665e-04 ;
+    rdf:rest ( 4.209872e-02 4.194948e+00 1.072427e+02 4.482689e+02 1.592581e+03 3.452932e+03 5.02852e+03 5.506514e+03 5.185698e+03 6.526393e+03 6.052448e+03 1.968535e+03 8.751179e+02 6.025704e+02 8.541235e+02 5.255104e+02 3.438129e+02 3.597945e+02 3.531748e+02 5.259282e+02 1.192618e+02 1.444891e+02 3.592569e+01 1.107872e+01 3.960722e+00 7.368065e+00 2.645751e+00 6.080011e-01 9.556138e-02 2.312005e-02 4.472911e-03 1.800251e-03 8.304649e-04 3.227704e-04 9.885221e-05 3.03459e-05 3.67954e-05 1.661027e-05 6.668018e-07 ) .
+
+_:423d594e-1901-4cb7-99ae-bad69a39ddf1 a essentia:Maximum ;
+    afo:value 2.690352e+01 .
+
+_:426b1204-4e47-4930-9766-c2da8bb8aa48 a essentia:SecondDerivativeVariance ;
+    afo:value 2.13757e+01 .
+
+_:43054b9e-2a7b-4da5-98fa-648873ce76c8 a essentia:SecondDerivativeVariance ;
+    afo:values ( 6.415778e-03 4.14605e-03 2.951644e-03 2.393799e-03 3.63145e-03 4.075035e-03 ) .
+
+_:4437fa0e-5d12-406e-8753-918a252d8132 a essentia:DerivativeMean ;
+    afo:value 1.542175e-03 .
+
+_:443c6964-40cb-4f38-ac20-63bf55c69281 a essentia:Flux ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0fe496ba-2ab7-4189-b27f-e72914b58bfa,
+        _:1aea49ff-cb97-4d05-9653-906a69d7ccfb,
+        _:28918ef8-a453-4647-bfc2-64bf94faed01,
+        _:2cddbed4-8d09-4a5a-93fb-c6eb3949a668,
+        [ a essentia:DerivativeMean ;
+            afo:value 2.436638e-02 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 3.807471e-02 ],
+        [ a essentia:Maximum ;
+            afo:value 3.93653e-01 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.035066e-03 ],
+        [ a essentia:Mean ;
+            afo:value 5.872677e-02 ] .
+
+_:451ffcc8-5c4c-4500-873c-07422b07bdc2 a essentia:Minimum ;
+    afo:values [ rdf:first 0 ;
+            rdf:rest [ rdf:first 0 ;
+                    rdf:rest [ rdf:first 0 ;
+                            rdf:rest [ rdf:first 0 ;
+                                    rdf:rest [ rdf:first 0 ;
+                                            rdf:rest [ rdf:first 0 ;
+                                                    rdf:rest () ] ] ] ] ] ] .
+
+_:4612a445-497b-49e4-9921-5e8d14fdd1f6 a essentia:SecondDerivativeVariance ;
+    afo:values ( 1.623323e-01 1.144835e-01 9.488572e-02 3.058183e-02 8.1757e-02 8.2778e-03 ) .
+
+_:46174b59-1e44-4d03-9b0e-6652390ee5ed a essentia:Minimum ;
+    afo:value 7.882553e+05 .
+
+_:47159e23-3ff1-4030-8813-b4db8699e364 a essentia:ERBBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:07df9e8c-ccdd-4740-b6e7-68d01dd20bfe .
+
+_:4725d3a3-9435-497a-9a94-7ac4bc9ac6b1 a essentia:Maximum ;
+    afo:value 6.357296e-03 .
+
+_:4745a483-8711-46af-ae07-c0f103cc292e a essentia:Maximum ;
+    afo:value 2.454774e+01 .
+
+_:4754bae8-e044-4db1-a778-9e9178c756f1 a essentia:Variance ;
+    afo:value 2.38523e-05 .
+
+_:47c669b2-1079-460d-ab94-49713ce2a07f a essentia:DerivativeVariance ;
+    afo:value 2.243682e+02 .
+
+_:47f391e1-a49a-470f-86ed-4e03f56f3225 a essentia:BarkBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Kurtosis ;
+            afo:feature _:20e4c7a8-47f6-4787-b12d-0efac07b168c,
+                [ a essentia:DerivativeMean ;
+                    afo:value 5.973769e+00 ],
+                [ a essentia:Minimum ;
+                    afo:value -1.745255e+00 ],
+                [ a essentia:Mean ;
+                    afo:value 7.732987e+00 ],
+                [ a essentia:Variance ;
+                    afo:value 1.423246e+02 ],
+                [ a essentia:Median ;
+                    afo:value 4.23049e+00 ],
+                [ a essentia:SecondDerivativeMean ;
+                    afo:value 9.653354e+00 ],
+                [ a essentia:Maximum ;
+                    afo:value 5.238846e+02 ],
+                [ a essentia:SecondDerivativeVariance ;
+                    afo:value 2.929896e+02 ] ] .
+
+_:480e732f-2626-4566-85e7-0c1b8606cd6b a essentia:Minimum ;
+    afo:value 103 .
+
+_:4949729b-7e44-43fa-b539-0b5b2b2d79cd a essentia:Minimum ;
+    afo:values _:35db811d-dd6c-49b7-a37a-4e4e87e07864 .
+
+_:4a1e4bb4-e5e5-47b2-a62c-6f2e1c39a905 a essentia:DerivativeVariance ;
+    afo:value 0 .
+
+_:4ac9a99a-8eaf-4364-909c-78ece9b76ce5 rdf:first 3.796256e-03 ;
+    rdf:rest ( 2.850943e-02 1.355629e-01 4.138202e-01 6.883041e-01 5.167511e-01 2.630761e-01 2.330377e-01 3.144576e-01 3.166495e-01 3.034986e-01 3.315086e-01 4.624367e-01 4.868842e-01 5.942469e-01 8.654559e-01 1.162307e+00 1.549932e+00 1.216248e+00 6.802495e-01 5.485787e-01 4.283017e-01 8.043838e-01 5.126751e-01 1.34627e-01 2.967781e-02 1.832717e-02 1.733495e-02 1.2157e-02 7.340063e-03 2.920478e-03 1.068085e-03 5.848935e-04 3.587668e-04 2.233681e-04 1.378639e-04 1.160799e-04 1.541882e-04 1.449258e-04 1.166992e-04 ) .
+
+_:4af5eea5-9094-4ce0-8a43-bdc9e1a90820 a essentia:Median ;
+    afo:values ( 3.658557e-01 2.467822e-01 7.280604e-02 5.29539e-02 3.417217e-02 3.970303e-03 ) .
+
+_:4cb415fd-ad3f-4b02-bb28-28251764a752 a essentia:Mean ;
+    afo:value 8.571429e-02 .
+
+_:4dc15419-41a5-46cc-a762-862d24e32f45 a essentia:SecondDerivativeMean ;
+    afo:value 9.979679e+05 .
+
+_:4dcc8a2a-dffc-4b2f-89e4-41257124996b a essentia:SecondDerivativeVariance ;
+    afo:value 1.319386e-03 .
+
+_:4dfee8df-5e93-4469-8ab1-0130dc269681 a essentia:Mean ;
+    afo:value 1.289384e+03 .
+
+_:4e0f0c06-0501-4000-864c-8c2e3cc4f641 a essentia:Minimum ;
+    afo:value -1.282501e+00 .
+
+_:4e29abd9-764a-43fc-8548-36404848ba9a a essentia:Mean ;
+    afo:value 6.873929e+00 .
+
+_:4e63a630-9d65-4224-8c24-45558338dfec a essentia:Mean ;
+    afo:value 4.700037e-01 .
+
+_:4edbf4e9-41da-44e5-8702-c0913dd6c75e a essentia:Mean ;
+    afo:value 1.334805e-02 .
+
+_:51def079-5796-44f2-94f1-a0f60f7e7d46 a essentia:SilenceRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0050e7ac-09cc-4bdd-bb47-8d6515b75a49,
+        _:2a0a19f0-cf42-4501-aaf8-245d051e38c9,
+        _:4e63a630-9d65-4224-8c24-45558338dfec,
+        [ a essentia:DerivativeVariance ;
+            afo:value 1.061695e-01 ],
+        [ a essentia:Median ;
+            afo:value 0 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 2.415207e-01 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 2.1103e-01 ],
+        [ a essentia:Minimum ;
+            afo:value 0 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 1.207453e-01 ] .
+
+_:52341d6a-01e7-4a1f-815f-b7c3a77a1969 a essentia:DerivativeMean ;
+    afo:value 2.023639e-02 .
+
+_:53273968-6ae4-42e4-b7c7-309e9571459e a essentia:DerivativeVariance ;
+    afo:values ( 3.138392e-03 1.700962e-03 1.253471e-03 1.039348e-03 1.700665e-03 1.719739e-03 ) .
+
+_:54351d9b-ab22-4b5f-adf9-2da29ebe0a35 a essentia:Variance ;
+    afo:value 1.516345e+01 .
+
+_:55316c90-2641-4dbf-ad92-e894b7bc09d2 rdf:first 9.947048e-01 ;
+    rdf:rest ( 8.62749e-01 8.715348e-01 7.647572e-01 8.623059e-01 6.767709e-01 ) .
+
+_:55685ea3-06ef-48cf-aa39-92c37b4c23a3 a essentia:Mean ;
+    afo:value 4.711457e-01 .
+
+_:55c705e9-13f6-4960-8ec7-d2bea9b8b5b4 a essentia:Mean ;
+    afo:value 2.303347e-02 .
+
+_:57840ddd-7833-4c9e-8d28-e777beae2fd4 a essentia:Minimum ;
+    afo:value 0 .
+
+_:58a42382-02b0-4b2e-b62e-af58f5b7e06d a essentia:ChordsHistogram ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value _:03aea448-5fe3-4c50-a0d8-a472486fb86e .
+
+_:58ab5787-21b9-47d2-aa66-648a5a26f154 a essentia:SecondDerivativeVariance ;
+    afo:value 2.889441e-03 .
+
+_:58d46d69-fe60-4594-89a1-1670c4329c90 a essentia:ERBBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:3f0433ee-ade1-4950-a3dc-092311b454eb .
+
+_:58d736d5-69ed-431b-b430-134ccb3fea0e a essentia:Minimum ;
+    afo:value 0 .
+
+_:59d7f5f8-c191-4c2d-8db3-b7e10160e5fb a essentia:Minimum ;
+    afo:value 6.4e-01 .
+
+_:5a9c11de-a83f-4c33-921c-1dde81cb042c a essentia:Minimum ;
+    afo:value 2.135139e+00 .
+
+_:5b8a76e6-b19d-45dc-ad72-5b3b9549a4f3 a essentia:Minimum ;
+    afo:value 5.142857e-02 .
+
+_:5cc8ee95-4f11-4201-93e7-4955095ebf3e a essentia:Maximum ;
+    afo:value 4.748842e+00 .
+
+_:5e2a55ca-a930-41a7-88b2-23feff4e8a70 a essentia:EqualTemperedDeviation ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 2.115477e-01 .
+
+_:5e8c57e9-eca9-4287-9055-ee6226b3a78a a essentia:Maximum ;
+    afo:value 6.4e-01 .
+
+_:5f69602a-54f4-4fc7-86d9-02454efdc86a a essentia:DynamicComplexity ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 1.26501e+01 .
+
+_:60512243-683f-44d8-bf94-2ef7c1f2d5de a essentia:DerivativeMean ;
+    afo:value 2.779329e+02 .
+
+_:6052eff7-9f34-4fba-9333-031b7be4cdc2 a essentia:DerivativeVariance ;
+    afo:value 7.358308e-04 .
+
+_:605c7f9e-ab2e-4870-be73-48ae38c0e2ed a essentia:Median ;
+    afo:value 1 .
+
+_:607139bd-26d9-4853-9c8d-debfb78e7383 a essentia:DerivativeMean ;
+    afo:value 6.174592e+05 .
+
+_:609127b3-d948-4164-a0c4-5db16e92f2ab a essentia:SecondDerivativeVariance ;
+    afo:value 0 .
+
+_:6112a73f-9637-4d9c-80e5-b40ef38e1a08 a essentia:Mean ;
+    afo:value 3.312677e+06 .
+
+_:62f9dbe0-2fc8-41dd-a24d-8c397bef5633 a essentia:Variance ;
+    afo:value 2.296523e+13 .
+
+_:63190f15-6809-4ac7-98e9-7ee6236e0e92 a essentia:DerivativeMean ;
+    afo:value 3.475225e+00 .
+
+_:63e88d7f-87dd-4995-9451-5f7d6e3c09cf a essentia:Maximum ;
+    afo:values _:2b748acb-96c6-499d-bf17-2dc1a4456529 .
+
+_:66238eae-0b09-42a6-afc3-a8d4df4bae35 a essentia:Variance ;
+    afo:value 1.359757e-02 .
+
+_:6727525b-eca8-4d4e-a188-8e51898cdf37 a essentia:DerivativeMean ;
+    afo:value 1.465838e-02 .
+
+_:69a76839-0087-4896-92e9-c94966a61e12 a essentia:Maximum ;
+    afo:value 103 .
+
+_:6a810eea-fc06-46e6-8b3e-1adcf08d3697 a essentia:SecondDerivativeVariance ;
+    afo:value 0 .
+
+_:6c20fcb2-f191-4124-9726-9bd5b38b2e63 a essentia:SecondDerivativeVariance ;
+    afo:value 1.721847e+12 .
+
+_:6c443e49-b318-4d78-b6d0-8b40752a8fec a essentia:Variance ;
+    afo:value 1.248861e-03 .
+
+_:6cd09264-76ca-49cb-8ffb-393d8f960726 a essentia:Maximum ;
+    afo:value 1.137879e-01 .
+
+_:6d81a02c-b6f3-49dd-bf31-8674e14ca33e a essentia:Maximum ;
+    afo:value 3.173054e-01 .
+
+_:6d99a4a3-7dea-4f29-a018-0e2651de5001 a essentia:Median ;
+    afo:value 6.398638e+00 .
+
+_:6e291aea-3022-4bc4-9355-14b14ca4db5b a essentia:Mean ;
+    afo:value 3.826226e-01 .
+
+_:6ee08d2b-cca5-4f67-bb37-d19c36e19341 a essentia:SecondDerivativeVariance ;
+    afo:value 5.925334e-01 .
+
+_:6fc428a6-414c-46cd-8bbb-f2484d2f10d3 a essentia:Minimum ;
+    afo:value -1.877787e+00 .
+
+_:714c610b-3cef-461c-95c9-9d124d006424 a essentia:Maximum ;
+    afo:value 9.934021e-01 .
+
+_:72efbea2-4d1e-4def-a915-8b14684bee6b a essentia:PitchSalience ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0749e0cb-144e-4693-a148-4866be1c0d19,
+        _:0c34f0d7-4f16-468b-88a9-6f5e57547042,
+        _:138a730e-f5bd-49f4-904d-1bfe29a6bd20,
+        _:1676c48f-a9bf-41fa-9b0e-cb94f9a9b365,
+        _:3f1f8660-6b52-4461-8813-1680a1bfd359,
+        _:714c610b-3cef-461c-95c9-9d124d006424,
+        [ a essentia:DerivativeVariance ;
+            afo:value 7.377113e-03 ],
+        [ a essentia:Minimum ;
+            afo:value 1.3735e-01 ],
+        [ a essentia:Mean ;
+            afo:value 6.264479e-01 ] .
+
+_:73634c6a-a351-4aee-9932-4cc1416bfcd9 a essentia:SecondDerivativeVariance ;
+    afo:value 0 .
+
+_:73749eac-4505-449a-ba77-e43f29b44f23 rdf:first -5.768634e+00 ;
+    rdf:rest ( -3.746828e+00 -5.104877e+00 -5.909446e+00 -5.696905e+00 -9.001734e+00 ) .
+
+_:75c827a4-300f-4db5-9f94-fff3a63d9992 a essentia:SecondDerivativeMean ;
+    afo:value 1.209932e-02 .
+
+_:76c95684-becf-44dc-b1cf-3d3146356bca a essentia:SecondDerivativeVariance ;
+    afo:value 5.286526e-04 .
+
+_:777d55e2-cfc8-4981-a994-37690b12ef7e a essentia:MelBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Kurtosis ;
+            afo:feature _:25f96187-3281-4b05-bd0d-dcfccbf2cc4c,
+                _:47c669b2-1079-460d-ab94-49713ce2a07f,
+                _:6d99a4a3-7dea-4f29-a018-0e2651de5001,
+                _:6fc428a6-414c-46cd-8bbb-f2484d2f10d3,
+                [ a essentia:Mean ;
+                    afo:value 1.256794e+01 ],
+                [ a essentia:SecondDerivativeMean ;
+                    afo:value 1.521748e+01 ],
+                [ a essentia:SecondDerivativeVariance ;
+                    afo:value 5.254707e+02 ],
+                [ a essentia:DerivativeMean ;
+                    afo:value 9.434299e+00 ],
+                [ a essentia:Maximum ;
+                    afo:value 2.666342e+02 ] ] .
+
+_:782da542-5163-44ab-86f6-e7163f47318d rdf:first 5.640655e-01 ;
+    rdf:rest ( 8.097392e-01 7.604356e-01 5.862296e-01 4.367983e-01 1.470618e+00 ) .
+
+_:787f6e14-5e64-403a-b436-65fe29b20729 a essentia:HPCP ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature [ a essentia:Entropy ;
+            afo:feature _:2bdc4c9e-ba5c-4160-bb7e-99bafa594860,
+                _:5cc8ee95-4f11-4201-93e7-4955095ebf3e,
+                [ a essentia:Minimum ;
+                    afo:value 0 ],
+                [ a essentia:Median ;
+                    afo:value 2.913216e+00 ],
+                [ a essentia:DerivativeVariance ;
+                    afo:value 3.195599e-01 ],
+                [ a essentia:Mean ;
+                    afo:value 2.835832e+00 ],
+                [ a essentia:DerivativeMean ;
+                    afo:value 7.017738e-01 ],
+                [ a essentia:SecondDerivativeMean ;
+                    afo:value 1.185651e+00 ],
+                [ a essentia:Variance ;
+                    afo:value 6.911325e-01 ] ] .
+
+_:7908f24a-a4bc-4304-8da1-b386f46b5fd7 a essentia:Maximum ;
+    afo:value 1 .
+
+_:798ff5a2-27ee-409c-8e35-4d172f69811c a essentia:ChordsChangesRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 1.64928e-01 .
+
+_:79ed169e-8572-45a9-9437-8b2efcf3d707 a essentia:SecondPeakWeight ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:021484ad-ec80-48cd-aa32-c8c5b50e8e35,
+        _:19bdda9b-0fd9-44b8-ae35-8100f7390efe,
+        _:25bd3a87-0684-449d-a449-7473011490b7,
+        _:2f939019-ced7-4597-a87a-f584843e57c4,
+        _:4a1e4bb4-e5e5-47b2-a62c-6f2e1c39a905,
+        _:5b8a76e6-b19d-45dc-ad72-5b3b9549a4f3,
+        _:609127b3-d948-4164-a0c4-5db16e92f2ab,
+        [ a essentia:Median ;
+            afo:value 5.142857e-02 ],
+        [ a essentia:Mean ;
+            afo:value 5.142857e-02 ] .
+
+_:7aba93f7-5de2-42ff-9087-258e9c057d50 rdf:first 2.675664e-01 ;
+    rdf:rest ( 2.2816e+00 2.740618e+01 2.880666e+02 3.158816e+02 7.840198e+02 2.054426e+03 1.370734e+03 1.443254e+03 2.425521e+03 1.858528e+03 2.218925e+03 8.683169e+02 7.689619e+02 4.790495e+02 1.803479e+03 1.046876e+03 3.522628e+02 3.203325e+02 4.090009e+02 6.151298e+02 2.686413e+02 2.514137e+02 1.409433e+02 2.199497e+02 9.785839e+01 1.239651e+02 9.778221e+01 4.722535e+01 1.41741e+01 6.343781e+00 1.632937e+00 9.53438e-01 6.503373e-01 4.058739e-01 2.242409e-01 1.472936e-01 3.188761e-01 2.039181e-01 1.309822e-02 ) .
+
+_:7b404575-3f39-441b-9aab-6de2d4c2ee69 a essentia:SecondDerivativeVariance ;
+    afo:value 2.812756e-05 .
+
+_:7c7184df-cff8-4b5b-8cdb-b6343b76cb89 a essentia:BarkBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:36700872-46a8-49a3-8787-121cf6496a9a .
+
+_:7f7f1ac3-87b0-4d1f-a31e-ee8b5a70c8ee rdf:first 5.684032e-01 ;
+    rdf:rest ( 4.343411e-01 3.481465e-01 1.600575e-01 1.738406e-01 4.201225e-02 ) .
+
+_:810203bd-54da-4b78-a623-2c9e3d5fff4e a essentia:SecondDerivativeVariance ;
+    afo:value 4.774436e-04 .
+
+_:837a01b1-a17e-4f49-be8e-c9229ca0fd3f a essentia:Crest ;
+    afo:feature _:1339941a-6877-4b15-928d-5e52e54af798,
+        _:1684f5ef-d261-4c2e-abd1-12df64a2fcc0,
+        _:3bf539a1-4f7b-4153-a644-009d1156b066,
+        _:423d594e-1901-4cb7-99ae-bad69a39ddf1,
+        [ a essentia:Variance ;
+            afo:value 1.587518e+01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 2.898819e+00 ],
+        [ a essentia:Minimum ;
+            afo:value 2.269392e+00 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 4.842515e+00 ],
+        [ a essentia:Mean ;
+            afo:value 8.989717e+00 ] .
+
+_:84282665-a9a5-430f-9a8f-7e90b50117ba a essentia:InverseCovariance ;
+    afo:dimensions ( 13 13 ) ;
+    afo:values ( 3.493496e-04 -5.092759e-04 5.30899e-04 -4.408e-04 5.295255e-04 -5.201666e-04 7.044612e-04 -5.548189e-04 1.401934e-03 -1.054036e-03 1.515405e-03 -9.295884e-04 9.581486e-04 -5.092759e-04 1.259557e-03 -8.36627e-04 7.922615e-04 -1.073568e-03 1.036758e-03 -1.046042e-03 1.06191e-03 -1.823795e-03 2.770056e-03 -2.92176e-03 2.220688e-03 -4.710609e-04 5.30899e-04 -8.36627e-04 2.512405e-03 -1.835465e-03 1.408339e-03 6.974779e-05 -4.199301e-04 5.164414e-04 2.243496e-03 -3.986947e-03 5.681663e-03 -5.381641e-03 2.842186e-03 -4.408e-04 7.922615e-04 -1.835465e-03 6.046061e-03 -3.100074e-03 6.570286e-04 2.867138e-04 -6.119519e-04 -8.711946e-04 4.229858e-03 -5.828646e-03 3.639188e-03 -2.200732e-03 5.295255e-04 -1.073568e-03 1.408339e-03 -3.100074e-03 5.496929e-03 -3.117752e-03 3.66268e-04 4.726468e-05 2.017143e-03 -2.112724e-03 3.258768e-03 -3.155311e-03 1.431515e-03 -5.201666e-04 1.036758e-03 6.974779e-05 6.570286e-04 -3.117752e-03 8.422059e-03 -6.462505e-03 2.352845e-03 -3.947605e-03 2.852319e-03 -1.607189e-03 2.706546e-03 -3.651725e-03 7.044612e-04 -1.046042e-03 -4.199301e-04 2.867138e-04 3.66268e-04 -6.462505e-03 1.262546e-02 -8.41167e-03 8.473006e-03 -5.744107e-03 6.923869e-03 -4.575702e-03 5.206112e-03 -5.548189e-04 1.06191e-03 5.164414e-04 -6.119519e-04 4.726468e-05 2.352845e-03 -8.41167e-03 2.027205e-02 -1.477357e-02 1.269198e-02 -9.016269e-03 6.469143e-03 -5.610959e-03 1.401934e-03 -1.823795e-03 2.243496e-03 -8.711946e-04 2.017143e-03 -3.947605e-03 8.473006e-03 -1.477357e-02 2.831491e-02 -2.165053e-02 1.879165e-02 -1.063034e-02 5.830885e-03 -1.054036e-03 2.770056e-03 -3.986947e-03 4.229858e-03 -2.112724e-03 2.852319e-03 -5.744107e-03 1.269198e-02 -2.165053e-02 3.572554e-02 -2.512418e-02 1.559519e-02 -9.040215e-03 1.515405e-03 -2.92176e-03 5.681663e-03 -5.828646e-03 3.258768e-03 -1.607189e-03 6.923869e-03 -9.016269e-03 1.879165e-02 -2.512418e-02 3.754849e-02 -2.59544e-02 1.521492e-02 -9.295884e-04 2.220688e-03 -5.381641e-03 3.639188e-03 -3.155311e-03 2.706546e-03 -4.575702e-03 6.469143e-03 -1.063034e-02 1.559519e-02 -2.59544e-02 3.405026e-02 -1.797236e-02 9.581486e-04 -4.710609e-04 2.842186e-03 -2.200732e-03 1.431515e-03 -3.651725e-03 5.206112e-03 -5.610959e-03 5.830885e-03 -9.040215e-03 1.521492e-02 -1.797236e-02 2.631896e-02 ) .
+
+_:84c5b19f-41ff-487b-90e0-03242aca400e a essentia:DerivativeMean ;
+    afo:value 2.748061e-02 .
+
+_:85e04862-f465-4821-beab-5813dca60f01 a essentia:Median ;
+    afo:value 6.4e-01 .
+
+_:85f36bdc-96e2-4c83-9e40-89421ffb76f8 rdf:first 3.715193e-01 ;
+    rdf:rest ( 7.662585e-01 1.184218e+00 1.590567e+00 2.020136e+00 2.461315e+00 2.972154e+00 3.459773e+00 3.947392e+00 4.435011e+00 4.92263e+00 5.410249e+00 5.897868e+00 6.397098e+00 6.896327e+00 7.383945e+00 7.871564e+00 8.347573e+00 8.846803e+00 9.346031e+00 9.845261e+00 1.033288e+01 1.077406e+01 1.123846e+01 1.171447e+01 1.219048e+01 1.265487e+01 1.309605e+01 1.353723e+01 1.397841e+01 1.445442e+01 1.494204e+01 1.539483e+01 1.585923e+01 1.630041e+01 1.67532e+01 1.720599e+01 1.764717e+01 1.808834e+01 1.852952e+01 1.89707e+01 1.941188e+01 1.984145e+01 2.028263e+01 2.072381e+01 2.116499e+01 2.160617e+01 2.205896e+01 2.250014e+01 2.294131e+01 2.338249e+01 2.383528e+01 2.428807e+01 2.472925e+01 2.518204e+01 2.568127e+01 2.619211e+01 2.671456e+01 2.731828e+01 2.7922e+01 2.859537e+01 2.928036e+01 2.997696e+01 3.068517e+01 3.126567e+01 3.179973e+01 3.23454e+01 3.287946e+01 3.341351e+01 3.395918e+01 3.455129e+01 3.515501e+01 3.573551e+01 3.631601e+01 3.68849e+01 3.74654e+01 3.803429e+01 3.859156e+01 3.917206e+01 3.975256e+01 4.030984e+01 4.086712e+01 4.143601e+01 4.195846e+01 4.248091e+01 4.300336e+01 4.350258e+01 4.400181e+01 4.450104e+01 4.501188e+01 4.551111e+01 4.601034e+01 4.655601e+01 4.711329e+01 4.768217e+01 4.825106e+01 4.880834e+01 4.935401e+01 4.991129e+01 5.052662e+01 5.115356e+01 5.179211e+01 5.239583e+01 5.298793e+01 5.358004e+01 5.418376e+01 5.478748e+01 5.540281e+01 5.601814e+01 5.663347e+01 5.726041e+01 5.787574e+01 5.842141e+01 5.896708e+01 5.951274e+01 6.005841e+01 6.058086e+01 6.110331e+01 6.162576e+01 6.215982e+01 6.277515e+01 6.337886e+01 6.395936e+01 6.455148e+01 6.514359e+01 6.568925e+01 6.62117e+01 6.674576e+01 6.727982e+01 6.782549e+01 6.832471e+01 6.882394e+01 6.933479e+01 6.986884e+01 7.04029e+01 7.094857e+01 7.145941e+01 7.198186e+01 7.250431e+01 7.293388e+01 7.337505e+01 7.381623e+01 7.425742e+01 7.472181e+01 7.518621e+01 7.566222e+01 7.613823e+01 7.660263e+01 7.705542e+01 7.750821e+01 7.7961e+01 7.842539e+01 7.895946e+01 7.94819e+01 7.998113e+01 8.049197e+01 8.100281e+01 8.151365e+01 8.207093e+01 8.26282e+01 8.31971e+01 8.378921e+01 8.438132e+01 8.498503e+01 8.560036e+01 8.620408e+01 8.681941e+01 8.743474e+01 8.805006e+01 8.86654e+01 8.928072e+01 8.988445e+01 9.049977e+01 9.117315e+01 9.183492e+01 9.26244e+01 9.341388e+01 9.419174e+01 9.498122e+01 9.570104e+01 9.640925e+01 9.711746e+01 9.782567e+01 9.852226e+01 9.923048e+01 9.996191e+01 1.006817e+02 1.013667e+02 1.020749e+02 1.027599e+02 1.034449e+02 1.041299e+02 1.048149e+02 1.054999e+02 1.061036e+02 1.067073e+02 1.072878e+02 1.078683e+02 1.084488e+02 1.089132e+02 1.093776e+02 1.098536e+02 1.103296e+02 1.107824e+02 1.112468e+02 1.116648e+02 1.120827e+02 1.124775e+02 1.128606e+02 1.132669e+02 1.136849e+02 1.141029e+02 1.144976e+02 1.148923e+02 1.152871e+02 1.15705e+02 1.161694e+02 1.166338e+02 1.170866e+02 1.17551e+02 1.180154e+02 1.184798e+02 1.189558e+02 1.194202e+02 1.198614e+02 1.203142e+02 1.20767e+02 1.212198e+02 1.216842e+02 1.221137e+02 1.225549e+02 1.229961e+02 1.234257e+02 1.238552e+02 1.242848e+02 1.247144e+02 1.251091e+02 1.255039e+02 1.258986e+02 1.262933e+02 1.266881e+02 1.270828e+02 1.274775e+02 1.278607e+02 1.282438e+02 1.286385e+02 1.290217e+02 1.29428e+02 1.298228e+02 1.302407e+02 1.306703e+02 1.310999e+02 1.315178e+02 1.319358e+02 1.323537e+02 1.327717e+02 1.331897e+02 1.335844e+02 1.341068e+02 1.346409e+02 1.352562e+02 1.358832e+02 1.365101e+02 1.371951e+02 1.378685e+02 1.386115e+02 1.393662e+02 1.401556e+02 1.409219e+02 1.416882e+02 1.424544e+02 1.431975e+02 1.439289e+02 1.44579e+02 1.452176e+02 1.458794e+02 1.465411e+02 1.472029e+02 1.478647e+02 1.485148e+02 1.491882e+02 1.498616e+02 1.505582e+02 1.512664e+02 1.519978e+02 1.527409e+02 1.533794e+02 1.54018e+02 1.546681e+02 1.553067e+02 1.559452e+02 1.564677e+02 1.569901e+02 1.575126e+02 1.58035e+02 1.585459e+02 1.591031e+02 1.596836e+02 1.602641e+02 1.608911e+02 1.61518e+02 1.621449e+02 1.627719e+02 1.633988e+02 1.639793e+02 1.645598e+02 1.651055e+02 1.656512e+02 1.662084e+02 1.667773e+02 1.67323e+02 1.678803e+02 1.684259e+02 1.689716e+02 1.695521e+02 1.701326e+02 1.707131e+02 1.712936e+02 1.718857e+02 1.724778e+02 1.730467e+02 1.736156e+02 1.741729e+02 1.747418e+02 1.753107e+02 1.757402e+02 1.76193e+02 1.766342e+02 1.770754e+02 1.775282e+02 1.779577e+02 1.783989e+02 1.788285e+02 1.79258e+02 1.796992e+02 1.801404e+02 1.805932e+02 1.810576e+02 1.814291e+02 1.818006e+02 1.821838e+02 1.825669e+02 1.829268e+02 1.832867e+02 1.836466e+02 1.840065e+02 1.844129e+02 1.848192e+02 1.852256e+02 1.856319e+02 1.860383e+02 ) .
+
+_:85fcf827-206c-4975-8bc3-9c214562703e a essentia:Maximum ;
+    afo:value 1 .
+
+_:864f5c73-b3aa-4f36-ab82-9027c16e76dd a essentia:Mean ;
+    afo:values ( -8.644932e+02 1.500632e+02 -1.238547e+01 1.645937e+01 1.792921e+01 4.456689e+00 -1.799647e+00 5.465259e+00 -4.785477e+00 -3.953384e+00 7.166745e+00 -4.370881e+00 -6.905974e+00 ) .
+
+_:86d5b985-6a4e-4cd1-bf17-692d1e829222 a essentia:Mean ;
+    afo:value 103 .
+
+_:86df265b-96b0-4067-93ab-b748dd338122 a essentia:SecondDerivativeMean ;
+    afo:values ( 8.678108e-01 9.800597e-01 8.736398e-01 7.413603e-01 6.700136e-01 1.275101e+00 ) .
+
+_:87a48893-649a-4afe-bfa8-0f343cb34d47 a essentia:FirstPeakWeight ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:046abf65-a2d5-4768-b97e-1cae02153a63,
+        _:0debcf67-4e28-4b38-be52-fe5fc9552d3b,
+        _:3c290ffb-a5db-482c-90a4-aa6aad598d7e,
+        _:4cb415fd-ad3f-4b02-bb28-28251764a752,
+        _:6a810eea-fc06-46e6-8b3e-1adcf08d3697,
+        [ a essentia:Variance ;
+            afo:value 0 ],
+        [ a essentia:Minimum ;
+            afo:value 8.571429e-02 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 0 ],
+        [ a essentia:Median ;
+            afo:value 8.571429e-02 ] .
+
+_:87caa119-0af9-487b-a3a0-b8626df3fd42 a essentia:ChordsStrength ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0948719f-1dab-42d4-ba21-6252a6f801b2,
+        _:144b0725-315c-49e4-be5f-08764488a485,
+        _:1ac34145-5b18-4dfa-8820-edcddf1c2a8c,
+        _:1b3e878b-2386-408d-8f5f-b573b17d033f,
+        _:2110a9ea-0012-4a0f-b0fb-e17aa6803fe4,
+        _:4dcc8a2a-dffc-4b2f-89e4-41257124996b,
+        _:52341d6a-01e7-4a1f-815f-b7c3a77a1969,
+        _:6052eff7-9f34-4fba-9333-031b7be4cdc2,
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 2.794312e-02 ] .
+
+_:8874c23c-ddb0-421a-bf42-8fabd3b72b4f a essentia:SpectralValley ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:01b0c9fa-a7b1-4960-a8f8-d22c257f5392,
+        _:19c7345d-42f7-4c12-974b-1282c5929be3,
+        _:3681fd62-9840-4a9d-b2b0-959b6a71058a,
+        _:408896ee-fbd3-48d0-856f-3d80fd296123,
+        _:86df265b-96b0-4067-93ab-b748dd338122,
+        [ a essentia:Mean ;
+            afo:values _:0e6d7903-c54f-4399-b2f9-6f05c3dfecb8 ],
+        [ a essentia:DerivativeMean ;
+            afo:values ( 6.102911e-01 6.970704e-01 6.127648e-01 5.262568e-01 4.652525e-01 8.190683e-01 ) ],
+        [ a essentia:Maximum ;
+            afo:values _:73749eac-4505-449a-ba77-e43f29b44f23 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:values _:782da542-5163-44ab-86f6-e7163f47318d ] .
+
+_:895fa8d6-4d45-41e4-bbc2-d84dd38c0bae a essentia:SecondDerivativeMean ;
+    afo:value 2.932041e-02 .
+
+_:8bf1331d-025c-4a19-a032-595d6347de31 a essentia:SecondDerivativeVariance ;
+    afo:value 0 .
+
+_:8c1e8208-1acc-42ab-bd14-48ae5cfeba2e a essentia:StrongPeak ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0b8ce445-902d-4658-b4fa-9849d81b0f1a,
+        _:1b64642c-203b-457a-9d17-073876824014,
+        _:6e291aea-3022-4bc4-9355-14b14ca4db5b,
+        _:6ee08d2b-cca5-4f67-bb37-d19c36e19341,
+        [ a essentia:Minimum ;
+            afo:value 0 ],
+        [ a essentia:Maximum ;
+            afo:value 6.633074e+00 ],
+        [ a essentia:DerivativeVariance ;
+            afo:value 2.455119e-01 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 2.868756e-01 ],
+        [ a essentia:Variance ;
+            afo:value 3.729499e-01 ] .
+
+_:8c228200-8bb4-4f1d-88f0-ecefa2b362cd a essentia:Variance ;
+    afo:value 1.440142e+02 .
+
+_:8d018f61-3313-4bf6-a654-5e0d0706f960 rdf:first 3.202316e-01 ;
+    rdf:rest ( 2.478592e-01 1.979099e-01 9.018293e-02 9.466752e-02 2.388264e-02 ) .
+
+_:8d3342a2-2bea-4cbe-9a27-9e810b9f241e a essentia:OnsetRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 4.172894e+00 .
+
+_:8d68b87c-6871-42e7-b78f-e8e8e440f31f a essentia:Maximum ;
+    afo:value 1.111647e+02 .
+
+_:8fb00ccf-b614-4865-961b-09fa0ca9e759 a essentia:DerivativeVariance ;
+    afo:value 7.716559e+00 .
+
+_:91c55621-10f6-4b30-a917-4544de601fed a essentia:Minimum ;
+    afo:value 1.258385e+02 .
+
+_:94e7bede-2839-4184-b682-4d048abdbfa2 a essentia:Variance ;
+    afo:value 5.331381e-04 .
+
+_:9895b404-e4fd-4a90-8621-2b60eb75f968 a essentia:Kurtosis ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:1f031c21-11e5-4c4f-9141-26d3f6f70c1e,
+        _:24e3edd3-f410-4bf2-9767-146ca18c1085,
+        _:3d5f3f0a-6042-46d2-a48f-bf39723ece0b,
+        _:4e0f0c06-0501-4000-864c-8c2e3cc4f641,
+        _:8c228200-8bb4-4f1d-88f0-ecefa2b362cd,
+        _:8d68b87c-6871-42e7-b78f-e8e8e440f31f,
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 1.541289e+02 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 6.661911e+00 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 1.057216e+01 ] .
+
+_:9ac71cfb-3673-4271-8bd8-aae0fe7fd7cf a essentia:DerivativeMean ;
+    afo:value 2.466594e-02 .
+
+_:9c957b33-46e0-44d2-871d-c8cfcc132e86 a essentia:BeatsLoudnessBandRatio ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0c4e1519-9a0a-4924-8c13-75796e4e3c9c,
+        _:451ffcc8-5c4c-4500-873c-07422b07bdc2,
+        _:4612a445-497b-49e4-9921-5e8d14fdd1f6,
+        _:4af5eea5-9094-4ce0-8a43-bdc9e1a90820,
+        [ a essentia:SecondDerivativeMean ;
+            afo:values _:7f7f1ac3-87b0-4d1f-a31e-ee8b5a70c8ee ],
+        [ a essentia:Mean ;
+            afo:values _:2d2ad526-3512-4b65-b5d2-a64a1ae6ede3 ],
+        [ a essentia:DerivativeMean ;
+            afo:values _:8d018f61-3313-4bf6-a654-5e0d0706f960 ],
+        [ a essentia:Maximum ;
+            afo:values _:55316c90-2641-4dbf-ad92-e894b7bc09d2 ],
+        [ a essentia:Variance ;
+            afo:values _:05703354-19ea-4808-9a50-338ed4f5d5a2 ] .
+
+_:9e5a5483-ff1b-42f0-8292-170e335db944 a essentia:Minimum ;
+    afo:value 2.428263e-23 .
+
+_:9ebc122b-a710-4ddc-87f8-b2c3db25263a a essentia:DerivativeVariance ;
+    afo:value 1.055538e-03 .
+
+_:N03a742ba48404dd6bf65fdfad2b47611 rdf:first 7.963404e+01 ;
+    rdf:rest ( 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N052ea8e1f8d9447399b83984f73dd0e3 rdf:first 3.854354e+02 ;
+    rdf:rest ( 2.251241e+02 2.216657e+02 2.045432e+02 3.32459e+02 6.149445e+01 9.372453e+01 2.098237e+01 9.092496e+00 2.95962e+00 4.101306e+00 1.291648e+00 2.694798e-01 4.214878e-02 1.336587e-02 4.080335e-03 1.875779e-03 8.654387e-04 3.360501e-04 1.029828e-04 2.634209e-05 1.598575e-05 7.678132e-06 3.097884e-07 ) .
+
+_:N0553403aeb8342e9b32c805ff584ccf2 rdf:first 1.405925e+02 ;
+    rdf:rest ( 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N07eba885f8c4430ca1a052f54f182c8b rdf:first 1.030404e+02 ;
+    rdf:rest ( 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N0889c753cdf543b7b0ff230da69ad8d3 rdf:first 4.737917e+00 ;
+    rdf:rest ( 1.530045e+02 7.490872e+02 2.595829e+03 5.927152e+03 7.974492e+03 9.478473e+03 8.444326e+03 9.57143e+03 1.133971e+04 4.108365e+03 1.694378e+03 9.81718e+02 1.506405e+03 8.02753e+02 5.181172e+02 4.944424e+02 4.314595e+02 6.482375e+02 1.080318e+02 2.116187e+02 4.238705e+01 1.877862e+01 6.221625e+00 7.010766e+00 1.967496e+00 3.815922e-01 6.57376e-02 2.453273e-02 9.162318e-03 4.411277e-03 2.034398e-03 7.899049e-04 2.421088e-04 5.817821e-05 2.443139e-05 1.098158e-05 5.679321e-07 ) .
+
+_:N090e02f88db94a8883447d09e5a435c0 rdf:first -5.370858e+02 ;
+    rdf:rest ( -3.883925e+02 1.096401e+02 -3.313172e+02 -4.931303e+02 -3.154031e+03 -6.984792e+02 1.599677e+03 5.137804e+01 -1.389619e+02 -1.207445e+02 1.030404e+02 -1.29834e+02 7.816666e+01 1.556556e+02 -1.579708e+01 2.218101e+02 7.335938e+01 4.390798e+02 2.263507e+02 5.137804e+01 3.258211e+02 1.803602e+02 2.795025e+01 9.969288e+00 -2.374597e+00 -7.383778e+01 -4.920027e+01 4.456688e+01 1.108114e+01 -1.738575e+01 1.394486e+02 1.734846e+02 -1.389619e+02 1.803602e+02 4.685057e+02 2.523793e+02 1.405925e+02 3.985292e+01 -3.59151e+01 -6.162075e+01 -2.341664e+01 -7.909331e+00 1.326396e+01 -3.948419e+02 -2.960365e+02 -1.207445e+02 2.795025e+01 2.523793e+02 4.29768e+02 2.406781e+02 9.474733e+01 4.717273e+01 -3.308438e+01 -9.330858e+01 -1.812841e+01 6.269297e+01 -5.795449e+02 -1.705497e+02 1.030404e+02 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N09cab9f713c64448a5f6e643a5b15989 rdf:first 1.712426e+01 ;
+    rdf:rest ( 1.777652e+01 1.116845e+01 7.787258e+00 7.063317e+00 5.500525e+00 6.287879e+00 6.740602e+00 6.613882e+00 4.934533e+00 4.772486e+00 2.399119e+00 4.489042e+00 2.185264e+00 4.79829e-01 1.510729e-01 1.372859e-01 1.099564e-01 7.207594e-02 4.732862e-02 2.914542e-02 1.745778e-02 1.18004e-02 7.993896e-03 4.982536e-03 2.761984e-03 1.420411e-03 7.99998e-04 4.262316e-04 2.808876e-04 ) .
+
+_:N0e43056aa6bf41559e4ee3aed4dd93f4 rdf:first -8.036066e-01 ;
+    rdf:rest () .
+
+_:N0f1d6d3620f5413fb74527ddf49de2f7 rdf:first -7.973929e-01 ;
+    rdf:rest _:N0e43056aa6bf41559e4ee3aed4dd93f4 .
+
+_:N14851852c6eb49e7a51ab1b7925685b8 rdf:first 2.223821e-02 ;
+    rdf:rest ( 2.313181e+00 7.306767e+01 3.308455e+02 1.191253e+03 2.696787e+03 3.744921e+03 4.330771e+03 4.01007e+03 4.606757e+03 5.089076e+03 1.779259e+03 7.373372e+02 4.431596e+02 7.310694e+02 3.854354e+02 2.251241e+02 2.216657e+02 2.045432e+02 3.32459e+02 6.149445e+01 9.372453e+01 2.098237e+01 9.092496e+00 2.95962e+00 4.101306e+00 1.291648e+00 2.694798e-01 4.214878e-02 1.336587e-02 4.080335e-03 1.875779e-03 8.654387e-04 3.360501e-04 1.029828e-04 2.634209e-05 1.598575e-05 7.678132e-06 3.097884e-07 ) .
+
+_:N1be0f9bb0e6b4456a5a123bdee670063 rdf:first -6.984792e+02 ;
+    rdf:rest ( 2.263507e+02 1.734846e+02 -2.960365e+02 -1.705497e+02 -1.56049e+02 -5.370858e+02 -3.883925e+02 1.096401e+02 -3.313172e+02 -4.931303e+02 -3.154031e+03 -6.984792e+02 1.599677e+03 5.137804e+01 -1.389619e+02 -1.207445e+02 1.030404e+02 -1.29834e+02 7.816666e+01 1.556556e+02 -1.579708e+01 2.218101e+02 7.335938e+01 4.390798e+02 2.263507e+02 5.137804e+01 3.258211e+02 1.803602e+02 2.795025e+01 9.969288e+00 -2.374597e+00 -7.383778e+01 -4.920027e+01 4.456688e+01 1.108114e+01 -1.738575e+01 1.394486e+02 1.734846e+02 -1.389619e+02 1.803602e+02 4.685057e+02 2.523793e+02 1.405925e+02 3.985292e+01 -3.59151e+01 -6.162075e+01 -2.341664e+01 -7.909331e+00 1.326396e+01 -3.948419e+02 -2.960365e+02 -1.207445e+02 2.795025e+01 2.523793e+02 4.29768e+02 2.406781e+02 9.474733e+01 4.717273e+01 -3.308438e+01 -9.330858e+01 -1.812841e+01 6.269297e+01 -5.795449e+02 -1.705497e+02 1.030404e+02 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N3a467dda8d4f43efa03d8a86de7aa4e6 rdf:first 1.195175e+01 ;
+    rdf:rest ( 1.578304e+01 1.698989e+01 1.727962e+01 1.517744e+01 1.712426e+01 1.777652e+01 1.116845e+01 7.787258e+00 7.063317e+00 5.500525e+00 6.287879e+00 6.740602e+00 6.613882e+00 4.934533e+00 4.772486e+00 2.399119e+00 4.489042e+00 2.185264e+00 4.79829e-01 1.510729e-01 1.372859e-01 1.099564e-01 7.207594e-02 4.732862e-02 2.914542e-02 1.745778e-02 1.18004e-02 7.993896e-03 4.982536e-03 2.761984e-03 1.420411e-03 7.99998e-04 4.262316e-04 2.808876e-04 ) .
+
+_:N3aacaa2b6fe84e4298f7d153ff5580e4 rdf:first 3.120956e+00 ;
+    rdf:rest ( 7.384248e+00 1.195175e+01 1.578304e+01 1.698989e+01 1.727962e+01 1.517744e+01 1.712426e+01 1.777652e+01 1.116845e+01 7.787258e+00 7.063317e+00 5.500525e+00 6.287879e+00 6.740602e+00 6.613882e+00 4.934533e+00 4.772486e+00 2.399119e+00 4.489042e+00 2.185264e+00 4.79829e-01 1.510729e-01 1.372859e-01 1.099564e-01 7.207594e-02 4.732862e-02 2.914542e-02 1.745778e-02 1.18004e-02 7.993896e-03 4.982536e-03 2.761984e-03 1.420411e-03 7.99998e-04 4.262316e-04 2.808876e-04 ) .
+
+_:N411a459963fb443983bebfa19e6852a3 rdf:first -5.795449e+02 ;
+    rdf:rest ( -1.78472e+02 -1.191721e+03 -8.974752e+02 1.265613e+02 -8.899286e+02 -1.015824e+03 8.799126e+03 4.857341e+03 -6.984792e+02 2.263507e+02 1.734846e+02 -2.960365e+02 -1.705497e+02 -1.56049e+02 -5.370858e+02 -3.883925e+02 1.096401e+02 -3.313172e+02 -4.931303e+02 -3.154031e+03 -6.984792e+02 1.599677e+03 5.137804e+01 -1.389619e+02 -1.207445e+02 1.030404e+02 -1.29834e+02 7.816666e+01 1.556556e+02 -1.579708e+01 2.218101e+02 7.335938e+01 4.390798e+02 2.263507e+02 5.137804e+01 3.258211e+02 1.803602e+02 2.795025e+01 9.969288e+00 -2.374597e+00 -7.383778e+01 -4.920027e+01 4.456688e+01 1.108114e+01 -1.738575e+01 1.394486e+02 1.734846e+02 -1.389619e+02 1.803602e+02 4.685057e+02 2.523793e+02 1.405925e+02 3.985292e+01 -3.59151e+01 -6.162075e+01 -2.341664e+01 -7.909331e+00 1.326396e+01 -3.948419e+02 -2.960365e+02 -1.207445e+02 2.795025e+01 2.523793e+02 4.29768e+02 2.406781e+02 9.474733e+01 4.717273e+01 -3.308438e+01 -9.330858e+01 -1.812841e+01 6.269297e+01 -5.795449e+02 -1.705497e+02 1.030404e+02 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N412253dffe0445ad9d73ba10f63c3cd5 rdf:first -8.29206e-01 ;
+    rdf:rest _:N0f1d6d3620f5413fb74527ddf49de2f7 .
+
+_:N7926f8ad0a4d4910ac92cffeb5e11dbc rdf:first 6.651464e-01 ;
+    rdf:rest _:N3aacaa2b6fe84e4298f7d153ff5580e4 .
+
+_:N7b15c7d136b947628746fcb7a52abede rdf:first 1.394486e+02 ;
+    rdf:rest ( -3.948419e+02 -5.795449e+02 -1.78472e+02 -1.191721e+03 -8.974752e+02 1.265613e+02 -8.899286e+02 -1.015824e+03 8.799126e+03 4.857341e+03 -6.984792e+02 2.263507e+02 1.734846e+02 -2.960365e+02 -1.705497e+02 -1.56049e+02 -5.370858e+02 -3.883925e+02 1.096401e+02 -3.313172e+02 -4.931303e+02 -3.154031e+03 -6.984792e+02 1.599677e+03 5.137804e+01 -1.389619e+02 -1.207445e+02 1.030404e+02 -1.29834e+02 7.816666e+01 1.556556e+02 -1.579708e+01 2.218101e+02 7.335938e+01 4.390798e+02 2.263507e+02 5.137804e+01 3.258211e+02 1.803602e+02 2.795025e+01 9.969288e+00 -2.374597e+00 -7.383778e+01 -4.920027e+01 4.456688e+01 1.108114e+01 -1.738575e+01 1.394486e+02 1.734846e+02 -1.389619e+02 1.803602e+02 4.685057e+02 2.523793e+02 1.405925e+02 3.985292e+01 -3.59151e+01 -6.162075e+01 -2.341664e+01 -7.909331e+00 1.326396e+01 -3.948419e+02 -2.960365e+02 -1.207445e+02 2.795025e+01 2.523793e+02 4.29768e+02 2.406781e+02 9.474733e+01 4.717273e+01 -3.308438e+01 -9.330858e+01 -1.812841e+01 6.269297e+01 -5.795449e+02 -1.705497e+02 1.030404e+02 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:N9200159e9edc4f679a32989a3594abbd rdf:first -8.449879e-01 ;
+    rdf:rest ( -8.441532e-01 -8.29206e-01 -7.973929e-01 -8.036066e-01 ) .
+
+_:Na9ff12b42a9349cb817801bd84b8704d rdf:first 8.047645e-02 ;
+    rdf:rest _:N7926f8ad0a4d4910ac92cffeb5e11dbc .
+
+_:Nb1ce0c264b3447548b770329b290062c rdf:first 4.390798e+02 ;
+    rdf:rest _:N7b15c7d136b947628746fcb7a52abede .
+
+_:Nbaed449b3c7b42f489ed6003bb8fa56f rdf:first 8.799126e+03 ;
+    rdf:rest ( -3.154031e+03 4.390798e+02 1.394486e+02 -3.948419e+02 -5.795449e+02 -1.78472e+02 -1.191721e+03 -8.974752e+02 1.265613e+02 -8.899286e+02 -1.015824e+03 8.799126e+03 4.857341e+03 -6.984792e+02 2.263507e+02 1.734846e+02 -2.960365e+02 -1.705497e+02 -1.56049e+02 -5.370858e+02 -3.883925e+02 1.096401e+02 -3.313172e+02 -4.931303e+02 -3.154031e+03 -6.984792e+02 1.599677e+03 5.137804e+01 -1.389619e+02 -1.207445e+02 1.030404e+02 -1.29834e+02 7.816666e+01 1.556556e+02 -1.579708e+01 2.218101e+02 7.335938e+01 4.390798e+02 2.263507e+02 5.137804e+01 3.258211e+02 1.803602e+02 2.795025e+01 9.969288e+00 -2.374597e+00 -7.383778e+01 -4.920027e+01 4.456688e+01 1.108114e+01 -1.738575e+01 1.394486e+02 1.734846e+02 -1.389619e+02 1.803602e+02 4.685057e+02 2.523793e+02 1.405925e+02 3.985292e+01 -3.59151e+01 -6.162075e+01 -2.341664e+01 -7.909331e+00 1.326396e+01 -3.948419e+02 -2.960365e+02 -1.207445e+02 2.795025e+01 2.523793e+02 4.29768e+02 2.406781e+02 9.474733e+01 4.717273e+01 -3.308438e+01 -9.330858e+01 -1.812841e+01 6.269297e+01 -5.795449e+02 -1.705497e+02 1.030404e+02 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:Nd07b854b17144f80968302d6a25313cc rdf:first 4.937174e-02 ;
+    rdf:rest _:N0889c753cdf543b7b0ff230da69ad8d3 .
+
+_:Neaaa85a469a04ec59506ac6ffd164095 essentia:essentia "2.1-beta1" ;
+    essentia:essentia_build_sha "12879b851c9f4b0d899e1af4e221aa110f283a84" ;
+    essentia:essentia_git_sha "v2.1_beta1-7-ge0e83e8-dirty" ;
+    essentia:extractor "music 1.0" .
+
+_:a03f357e-35b9-4a52-8e16-bf6092844a3e a essentia:DerivativeVariance ;
+    afo:value 1.355924e+05 .
+
+_:a0721aea-88ad-4061-b27e-8113841cb193 a essentia:SilenceRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:254a71d4-e40c-4dd8-99ec-35c581a55ea5,
+        _:40923574-3d16-4b90-b466-de18258c9466,
+        _:605c7f9e-ab2e-4870-be73-48ae38c0e2ed,
+        _:73634c6a-a351-4aee-9932-4cc1416bfcd9,
+        _:85fcf827-206c-4975-8bc3-9c214562703e,
+        [ a essentia:DerivativeVariance ;
+            afo:value 0 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 0 ],
+        [ a essentia:Minimum ;
+            afo:value 1 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 0 ] .
+
+_:a0efae9c-3885-4197-ad01-58be5a54db5d a essentia:Median ;
+    afo:values _:4ac9a99a-8eaf-4364-909c-78ece9b76ce5 .
+
+_:a1158397-f3ec-4d7e-9d9a-5cb209deacc4 a essentia:Median ;
+    afo:value 1.013857e+01 .
+
+_:a1c43d70-060d-485c-b9f3-a42ff53c44d1 a essentia:Mean ;
+    afo:values _:0cebaac5-3860-4510-8e2e-ee91ae224b28 .
+
+_:a271a233-5e2f-4865-afd8-54468c8b9375 a essentia:Variance ;
+    afo:values _:420592d1-653d-4fdf-a5ce-d99276d24cfd .
+
+_:a2be0b40-5e30-4d3a-a97d-72220f7b5892 a essentia:Variance ;
+    afo:value 0 .
+
+_:a2c177a7-fcc9-4181-ab1d-2419ebfd23d7 a essentia:Covariance ;
+    afo:dimensions _:2c3081ea-26bc-4827-ba63-eb2b71ef03dc ;
+    afo:values ( 2.306634e+04 8.799126e+03 -3.154031e+03 4.390798e+02 1.394486e+02 -3.948419e+02 -5.795449e+02 -1.78472e+02 -1.191721e+03 -8.974752e+02 1.265613e+02 -8.899286e+02 -1.015824e+03 8.799126e+03 4.857341e+03 -6.984792e+02 2.263507e+02 1.734846e+02 -2.960365e+02 -1.705497e+02 -1.56049e+02 -5.370858e+02 -3.883925e+02 1.096401e+02 -3.313172e+02 -4.931303e+02 -3.154031e+03 -6.984792e+02 1.599677e+03 5.137804e+01 -1.389619e+02 -1.207445e+02 1.030404e+02 -1.29834e+02 7.816666e+01 1.556556e+02 -1.579708e+01 2.218101e+02 7.335938e+01 4.390798e+02 2.263507e+02 5.137804e+01 3.258211e+02 1.803602e+02 2.795025e+01 9.969288e+00 -2.374597e+00 -7.383778e+01 -4.920027e+01 4.456688e+01 1.108114e+01 -1.738575e+01 1.394486e+02 1.734846e+02 -1.389619e+02 1.803602e+02 4.685057e+02 2.523793e+02 1.405925e+02 3.985292e+01 -3.59151e+01 -6.162075e+01 -2.341664e+01 -7.909331e+00 1.326396e+01 -3.948419e+02 -2.960365e+02 -1.207445e+02 2.795025e+01 2.523793e+02 4.29768e+02 2.406781e+02 9.474733e+01 4.717273e+01 -3.308438e+01 -9.330858e+01 -1.812841e+01 6.269297e+01 -5.795449e+02 -1.705497e+02 1.030404e+02 9.969288e+00 1.405925e+02 2.406781e+02 2.803126e+02 7.963404e+01 1.685011e+01 -2.098321e+01 -6.975912e+01 2.411497e+00 2.606185e+01 -1.78472e+02 -1.56049e+02 -1.29834e+02 -2.374597e+00 3.985292e+01 9.474733e+01 7.963404e+01 1.320005e+02 5.97272e+01 -2.034073e+01 -3.459012e+01 -1.581238e+01 2.987354e+01 -1.191721e+03 -5.370858e+02 7.816666e+01 -7.383778e+01 -3.59151e+01 4.717273e+01 1.685011e+01 5.97272e+01 1.710265e+02 7.889066e+01 -4.180559e+01 2.906934e+01 7.028118e+01 -8.974752e+02 -3.883925e+02 1.556556e+02 -4.920027e+01 -6.162075e+01 -3.308438e+01 -2.098321e+01 -2.034073e+01 7.889066e+01 1.1902e+02 3.278916e+01 4.361053e+01 3.760213e+01 1.265613e+02 1.096401e+02 -1.579708e+01 4.456688e+01 -2.341664e+01 -9.330858e+01 -6.975912e+01 -3.459012e+01 -4.180559e+01 3.278916e+01 1.277422e+02 4.901147e+01 -2.231532e+01 -8.899286e+02 -3.313172e+02 2.218101e+02 1.108114e+01 -7.909331e+00 -1.812841e+01 2.411497e+00 -1.581238e+01 2.906934e+01 4.361053e+01 4.901147e+01 1.239688e+02 6.236855e+01 -1.015824e+03 -4.931303e+02 7.335938e+01 -1.738575e+01 1.326396e+01 6.269297e+01 2.606185e+01 2.987354e+01 7.028118e+01 3.760213e+01 -2.231532e+01 6.236855e+01 1.188006e+02 ) .
+
+_:a429a1b4-c0ed-47da-9a32-4970a5a2f4a8 a essentia:ChordsKey ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value "F" .
+
+_:a8a37802-5493-4112-92ba-c8a894b90434 a essentia:SecondDerivativeVariance ;
+    afo:value 0 .
+
+_:aae6bd74-d17d-407c-b8a2-9545b3b0f742 a essentia:SecondPeakBPM ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:14427e86-a50e-49c8-b212-d506bfeb9614,
+        _:1e071efe-68dc-4809-9329-bf9e5f045e00,
+        _:2165da60-715a-4c32-9415-ad2e80a6de72,
+        _:480e732f-2626-4566-85e7-0c1b8606cd6b,
+        _:69a76839-0087-4896-92e9-c94966a61e12,
+        _:86d5b985-6a4e-4cd1-bf17-692d1e829222,
+        _:a2be0b40-5e30-4d3a-a97d-72220f7b5892,
+        _:a8a37802-5493-4112-92ba-c8a894b90434,
+        [ a essentia:Median ;
+            afo:value 103 ] .
+
+_:acde0548-65d7-4acc-8056-efa552787b5e a essentia:SilenceRate ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:05cbab21-890d-41a7-a416-2422861f6a44,
+        _:19234371-defb-4dd9-8f45-8f28dac1c45a,
+        _:40cc060a-cb3e-42f2-af69-f374c3abf357,
+        _:66238eae-0b09-42a6-afc3-a8d4df4bae35,
+        _:6727525b-eca8-4d4e-a188-8e51898cdf37,
+        _:7908f24a-a4bc-4304-8da1-b386f46b5fd7,
+        _:895fa8d6-4d45-41e4-bbc2-d84dd38c0bae,
+        [ a essentia:Minimum ;
+            afo:value 0 ],
+        [ a essentia:Mean ;
+            afo:value 9.862129e-01 ] .
+
+_:ae8f6f32-dc94-423b-ace9-f20fbb145bf3 a essentia:Minimum ;
+    afo:value 6.995057e-21 .
+
+_:b28ae5ee-8b32-4114-b5aa-f7105fc0cf5e a essentia:SecondDerivativeMean ;
+    afo:value 4.929039e-02 .
+
+_:b2e4cdc4-618d-4f32-b631-d988fc75df03 a essentia:SecondDerivativeVariance ;
+    afo:value 2.452448e+05 .
+
+_:b318b1dc-db04-4f11-ba43-e2eb75c82459 a essentia:BeatsLoudness ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:18986a26-ca95-481d-ae2a-65e8bc9a1557,
+        _:194caf9f-8043-4975-8424-7a97e330f9c7,
+        _:270c24df-05df-44f7-991d-ee4b4b698327,
+        _:55c705e9-13f6-4960-8ec7-d2bea9b8b5b4,
+        _:58d736d5-69ed-431b-b430-134ccb3fea0e,
+        _:84c5b19f-41ff-487b-90e0-03242aca400e,
+        _:b28ae5ee-8b32-4114-b5aa-f7105fc0cf5e,
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 3.742838e-03 ],
+        [ a essentia:Maximum ;
+            afo:value 3.234605e-01 ] .
+
+_:b5d51532-8568-48b0-bde3-20a7099ff6be a essentia:ChordsScale ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value "minor" .
+
+_:b7677491-cc5a-4202-9710-17a0f5de19c0 a essentia:MelBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:1d15c32d-e015-4281-9e9d-8d2fa95e1171 .
+
+_:b8cc6396-d534-461f-a5e3-f9a61e40e73f a essentia:Median ;
+    afo:value 5 .
+
+_:ba4af032-42ea-4688-b594-7aea572ecef9 a essentia:Median ;
+    afo:value 4.849071e-01 .
+
+_:baed4a73-fab7-4a5c-8173-e19b28d018b0 a essentia:Median ;
+    afo:values ( -6.858288e-01 -8.449879e-01 -8.441532e-01 -8.29206e-01 -7.973929e-01 -8.036066e-01 ) .
+
+_:bc10441f-5e34-4cc1-834a-82832c3483e5 a essentia:Energy ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:1d0d7bdc-2125-4c4f-b5b8-498ca4341d62,
+        _:26a62004-9217-4454-9aea-5ba298e642d9,
+        _:2ce552e2-0717-4013-8aa2-a8c349a64532,
+        _:4edbf4e9-41da-44e5-8702-c0913dd6c75e,
+        _:75c827a4-300f-4db5-9f94-fff3a63d9992,
+        _:76c95684-becf-44dc-b1cf-3d3146356bca,
+        [ a essentia:DerivativeVariance ;
+            afo:value 2.951598e-04 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 8.868944e-03 ],
+        [ a essentia:Minimum ;
+            afo:value 9.742332e-21 ] .
+
+_:c44bf4bb-c151-498a-aec4-4f6b1ad45984 a essentia:SecondPeakSpread ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0384f1bd-11c5-42ce-9ac6-c1caff9f738d,
+        _:2c7b95ea-4e4a-48aa-ab09-2ebbdb97f254,
+        _:2c9f3af6-bcf9-4893-9f76-70d04e275734,
+        _:59d7f5f8-c191-4c2d-8db3-b7e10160e5fb,
+        _:5e8c57e9-eca9-4287-9055-ee6226b3a78a,
+        _:85e04862-f465-4821-beab-5813dca60f01,
+        _:8bf1331d-025c-4a19-a032-595d6347de31,
+        [ a essentia:Variance ;
+            afo:value 0 ],
+        [ a essentia:Mean ;
+            afo:value 6.4e-01 ] .
+
+_:c62dd68c-11f0-4121-9a1a-85360062c956 a essentia:SecondDerivativeMean ;
+    afo:value 2.277752e-03 .
+
+_:c78a74e9-457f-4326-9e29-d485395928da rdf:first 6.37371e-03 ;
+    rdf:rest _:Na9ff12b42a9349cb817801bd84b8704d .
+
+_:c853fc97-66b2-45a0-86e7-545703b2b955 a essentia:DerivativeVariance ;
+    afo:values ( 1.324779e-04 2.223821e-02 2.313181e+00 7.306767e+01 3.308455e+02 1.191253e+03 2.696787e+03 3.744921e+03 4.330771e+03 4.01007e+03 4.606757e+03 5.089076e+03 1.779259e+03 7.373372e+02 4.431596e+02 7.310694e+02 3.854354e+02 2.251241e+02 2.216657e+02 2.045432e+02 3.32459e+02 6.149445e+01 9.372453e+01 2.098237e+01 9.092496e+00 2.95962e+00 4.101306e+00 1.291648e+00 2.694798e-01 4.214878e-02 1.336587e-02 4.080335e-03 1.875779e-03 8.654387e-04 3.360501e-04 1.029828e-04 2.634209e-05 1.598575e-05 7.678132e-06 3.097884e-07 ) .
+
+_:c9958d29-b2d0-4df7-bcd8-c7f8f680f55d a essentia:EnergyBand ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:064d0b5a-33e3-4140-8591-0ba8746d170f,
+        _:3f8eb2ce-1630-49c9-a9ce-a058baef22d1,
+        _:4725d3a3-9435-497a-9a94-7ac4bc9ac6b1,
+        _:ae8f6f32-dc94-423b-ace9-f20fbb145bf3,
+        [ a essentia:Mean ;
+            afo:value 2.261828e-05 ],
+        [ a essentia:Variance ;
+            afo:value 1.626477e-08 ],
+        [ a essentia:DerivativeMean ;
+            afo:value 1.667323e-05 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 2.38653e-05 ],
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 1.096008e-08 ] .
+
+_:cad8a622-81cd-466e-9098-41b05d0533c3 a essentia:Spread ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:46174b59-1e44-4d03-9b0e-6652390ee5ed,
+        _:4dc15419-41a5-46cc-a762-862d24e32f45,
+        _:607139bd-26d9-4853-9c8d-debfb78e7383,
+        _:6112a73f-9637-4d9c-80e5-b40ef38e1a08,
+        _:62f9dbe0-2fc8-41dd-a24d-8c397bef5633,
+        _:6c20fcb2-f191-4124-9726-9bd5b38b2e63,
+        [ a essentia:DerivativeVariance ;
+            afo:value 771624665088 ],
+        [ a essentia:Maximum ;
+            afo:value 48307852 ],
+        [ a essentia:Median ;
+            afo:value 2.61896e+06 ] .
+
+_:cc0d4aef-d03d-4a95-ae0e-945c6e7a94ba a essentia:Maximum ;
+    afo:value 1.179949e+04 .
+
+_:cd4785f2-65eb-4ca5-b32a-dcc6effc56c8 a essentia:DerivativeMean ;
+    afo:value 7.747272e-03 .
+
+_:ce087f3c-a7f3-4762-b968-8f4325501f32 a essentia:Mean ;
+    afo:value 2.249427e-03 .
+
+_:cf1f85fe-7959-4408-a203-e7c56ffdb07c a essentia:Minimum ;
+    afo:values _:2b0428ca-0afb-4725-907a-e4cc6f79f462 .
+
+_:cfd19848-cde1-4c05-a39b-49a97b62999e a essentia:EnergyBand ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:36bc481f-3f46-4921-9012-8167800f65d3,
+        _:4437fa0e-5d12-406e-8753-918a252d8132,
+        _:4754bae8-e044-4db1-a778-9e9178c756f1,
+        _:6cd09264-76ca-49cb-8ffb-393d8f960726,
+        _:7b404575-3f39-441b-9aab-6de2d4c2ee69,
+        _:9e5a5483-ff1b-42f0-8292-170e335db944,
+        _:c62dd68c-11f0-4121-9a1a-85360062c956,
+        _:ce087f3c-a7f3-4762-b968-8f4325501f32,
+        [ a essentia:Median ;
+            afo:value 5.078207e-04 ] .
+
+_:d05ba40d-ae29-4296-ae05-71a05e3d4244 a essentia:Dissonance ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0f11431a-3abb-4688-95b8-ef5724756739,
+        _:3a3ac83c-4604-4d85-8256-2e1ede184a9e,
+        _:55685ea3-06ef-48cf-aa39-92c37b4c23a3,
+        _:58ab5787-21b9-47d2-aa66-648a5a26f154,
+        _:6c443e49-b318-4d78-b6d0-8b40752a8fec,
+        _:9ac71cfb-3673-4271-8bd8-aae0fe7fd7cf,
+        _:9ebc122b-a710-4ddc-87f8-b2c3db25263a,
+        _:ba4af032-42ea-4688-b594-7aea572ecef9,
+        [ a essentia:Maximum ;
+            afo:value 5.000002e-01 ] .
+
+_:d05fa128-e39b-41df-886e-90e7dd3fb668 a essentia:SecondDerivativeMean ;
+    afo:value 4.009442e+00 .
+
+_:d062c5ef-1af7-480f-badd-37d701ff8d57 a essentia:Crest ;
+    afo:feature _:37628792-2e7a-420b-8f52-a4b244510bae,
+        _:3fb54021-7b2b-4ce2-a5cb-46c6df36fbb0,
+        _:4745a483-8711-46af-ae07-c0f103cc292e,
+        _:54351d9b-ab22-4b5f-adf9-2da29ebe0a35,
+        _:5a9c11de-a83f-4c33-921c-1dde81cb042c,
+        _:63190f15-6809-4ac7-98e9-7ee6236e0e92,
+        _:8fb00ccf-b614-4865-961b-09fa0ca9e759,
+        _:a1158397-f3ec-4d7e-9d9a-5cb209deacc4,
+        [ a essentia:SecondDerivativeVariance ;
+            afo:value 2.048004e+01 ] .
+
+_:d2e4c515-5caf-4236-961a-68623bcf2883 a essentia:Centroid ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:4dfee8df-5e93-4469-8ab1-0130dc269681,
+        _:60512243-683f-44d8-bf94-2ef7c1f2d5de,
+        _:91c55621-10f6-4b30-a917-4544de601fed,
+        _:a03f357e-35b9-4a52-8e16-bf6092844a3e,
+        _:b2e4cdc4-618d-4f32-b631-d988fc75df03,
+        _:cc0d4aef-d03d-4a95-ae0e-945c6e7a94ba,
+        [ a essentia:Variance ;
+            afo:value 2.173208e+06 ],
+        [ a essentia:SecondDerivativeMean ;
+            afo:value 4.194222e+02 ],
+        [ a essentia:Median ;
+            afo:value 7.598204e+02 ] .
+
+_:d362d6d6-15f2-4360-9045-13f9885682ca a essentia:SpectralContrast ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:05f614e4-90ed-4fe3-ada0-34500439721f,
+        _:116d1057-3546-4919-9a80-bbdf0184aa2f,
+        _:370b7b6b-f2bd-401a-85d2-ee3d57b7897e,
+        _:3e3c6d80-7214-43d5-bbba-39fb65944a45,
+        _:43054b9e-2a7b-4da5-98fa-648873ce76c8,
+        _:53273968-6ae4-42e4-b7c7-309e9571459e,
+        _:63e88d7f-87dd-4995-9451-5f7d6e3c09cf,
+        _:baed4a73-fab7-4a5c-8173-e19b28d018b0,
+        _:cf1f85fe-7959-4408-a203-e7c56ffdb07c .
+
+_:d45b6698-3b92-4561-95c0-a1e0f24f2264 a essentia:ERBBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:2132fd1b-91ef-4df6-9372-9aa5a40da49e .
+
+_:d5be43d1-8486-4d82-a6eb-b654e19835f3 a essentia:KeyStrength ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value 4.428779e-01 .
+
+_:d6592ce6-8a0e-4f6e-b651-e89ea70620e2 a essentia:Maximum ;
+    afo:value 43 .
+
+_:d9c4619b-fb08-4b18-b14f-6aaa0c749bce a essentia:ERBBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:837a01b1-a17e-4f49-be8e-c9229ca0fd3f .
+
+_:da875ff2-a34c-4223-9c63-5fc538f1f7cb a essentia:Median ;
+    afo:value 8.991043e-04 .
+
+_:dc1d6d91-8846-493c-855f-2f0f79dcaac0 a essentia:MFCC ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:84282665-a9a5-430f-9a8f-7e90b50117ba,
+        _:864f5c73-b3aa-4f36-ab82-9027c16e76dd,
+        _:a2c177a7-fcc9-4181-ab1d-2419ebfd23d7 .
+
+_:e1ff3a92-f465-442c-a2eb-f6585144394e a essentia:EnergyBand ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0657a6a8-9930-473c-b122-f46ee0140796,
+        _:17be8704-9dd6-4fd8-a9b8-890521787b72,
+        _:224fecdd-4329-4d70-b368-78b22b0a6519,
+        _:6d81a02c-b6f3-49dd-bf31-8674e14ca33e,
+        _:810203bd-54da-4b78-a623-2c9e3d5fff4e,
+        _:94e7bede-2839-4184-b682-4d048abdbfa2,
+        _:cd4785f2-65eb-4ca5-b32a-dcc6effc56c8,
+        _:da875ff2-a34c-4223-9c63-5fc538f1f7cb,
+        [ a essentia:Minimum ;
+            afo:value 1.602286e-22 ] .
+
+_:e2349404-3ce7-44dc-a0ef-f225efd00627 a essentia:SpectralComplexity ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:08cf1fcb-3ae7-450a-9d6d-73c9ae487ca3,
+        _:1ebdb392-f021-459a-aa83-c47d1ae1611a,
+        _:22e628ea-586a-4c47-b2b0-bd8d79413910,
+        _:426b1204-4e47-4930-9766-c2da8bb8aa48,
+        _:4e29abd9-764a-43fc-8548-36404848ba9a,
+        _:57840ddd-7833-4c9e-8d28-e777beae2fd4,
+        _:b8cc6396-d534-461f-a5e3-f9a61e40e73f,
+        _:d05fa128-e39b-41df-886e-90e7dd3fb668,
+        _:d6592ce6-8a0e-4f6e-b651-e89ea70620e2 .
+
+_:e28a14ff-9aee-4f2c-9c59-d818aa7059b9 a essentia:ERBBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:0b8f3eee-ba06-43ce-ba76-88f020cec0af,
+        _:4949729b-7e44-43fa-b539-0b5b2b2d79cd,
+        _:a0efae9c-3885-4197-ad01-58be5a54db5d,
+        _:a1c43d70-060d-485c-b9f3-a42ff53c44d1,
+        _:a271a233-5e2f-4865-afd8-54468c8b9375,
+        _:c853fc97-66b2-45a0-86e7-545703b2b955,
+        [ a essentia:SecondDerivativeVariance ;
+            afo:values ( 3.044793e-04 4.937174e-02 4.737917e+00 1.530045e+02 7.490872e+02 2.595829e+03 5.927152e+03 7.974492e+03 9.478473e+03 8.444326e+03 9.57143e+03 1.133971e+04 4.108365e+03 1.694378e+03 9.81718e+02 1.506405e+03 8.02753e+02 5.181172e+02 4.944424e+02 4.314595e+02 6.482375e+02 1.080318e+02 2.116187e+02 4.238705e+01 1.877862e+01 6.221625e+00 7.010766e+00 1.967496e+00 3.815922e-01 6.57376e-02 2.453273e-02 9.162318e-03 4.411277e-03 2.034398e-03 7.899049e-04 2.421088e-04 5.817821e-05 2.443139e-05 1.098158e-05 5.679321e-07 ) ],
+        [ a essentia:Maximum ;
+            afo:values _:7aba93f7-5de2-42ff-9087-258e9c057d50 ],
+        [ a essentia:DerivativeMean ;
+            afo:values _:c78a74e9-457f-4326-9e29-d485395928da ] .
+
+_:e3ed0ec0-0b6b-4eab-b2a2-f96e2443e66c a essentia:Loudness ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:feature [ a essentia:Mean ;
+            afo:value 6.451924e-01 ] .
+
+_:e852b54c-f436-4b2f-ae43-8d662b89d29a a essentia:BarkBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:d062c5ef-1af7-480f-badd-37d701ff8d57 .
+
+_:ed168000-6d92-4f4f-9cf0-d9937558092f a essentia:BarkBands ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:computed_by _:LowLevelExtractor ;
+    afo:feature _:00519a0a-3842-4ba1-8e2c-ed576eb72972 .
+
+_:f10845ad-fa14-4f11-bf34-f281004816af a essentia:BeatsPosition ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value _:85f36bdc-96e2-4c83-9e40-89421ffb76f8 .
+
+_:f85aefaa-842d-4c72-ae55-3bd1a5df4f94 a essentia:KeyScale ;
+    event:time _:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e ;
+    afo:value "minor" .
+
+_:LowLevelExtractor a essentia:LowLevelExtractor ;
+    essentia:version _:Neaaa85a469a04ec59506ac6ffd164095 .
+
+_:68ee9ffc-c6b5-4cdb-8c63-dcefef7ed23e a tl:Interval ;
+    tl:duration "186.90612793"^^xsd:duration ;
+    tl:event _:02b4c861-18dc-45dc-8e1e-82a152074fd5,
+        _:02ce9e21-dfbd-4b4d-87f6-dae5757b0ee0,
+        _:041969ef-b750-44ac-8d69-a983146aa1ae,
+        _:059c409e-664d-44a3-b3fa-2b7e4c8e2c15,
+        _:066a1a77-dae4-4aab-85d3-19beb0491893,
+        _:0e3bb095-debc-4892-994e-9c6226d08b20,
+        _:0eea61ae-16a3-441c-bd78-8d4df25ff02f,
+        _:113c8c5a-ff25-4b3e-be10-f9055dab498b,
+        _:1ad99ea6-5822-4595-8b80-7ed2fde6051b,
+        _:1ae3082f-48f7-45f3-8cec-b16c3a6e204a,
+        _:1b223fa4-0b20-4b7c-8b38-59885a944a8f,
+        _:1cfd8850-d1ce-44e6-a53e-5462a4267d9b,
+        _:1f0172d5-6a89-45b6-956b-e9b25ab56125,
+        _:2081000f-c7fd-4262-a66b-4363ede37d4c,
+        _:20ed23af-dac6-43bf-bdf4-d17d0f86d16b,
+        _:2677ee30-5dd0-4b19-9d4c-4aed84b4d2fc,
+        _:26b68538-d8d8-4fb1-8dae-6a72fac5ea4a,
+        _:2bb7e45f-d8c6-4104-abf9-daf7b5e575a7,
+        _:2d3b6b55-48b0-4de1-894c-50d4501aec63,
+        _:2d98fa04-0da0-46a1-9958-7357ef3dd598,
+        _:2dcb5c36-5531-4a5a-8628-5b1c789c46f5,
+        _:2f93f32d-1285-40a5-82c4-a54d0a62bdb2,
+        _:3246bb41-82d6-4669-9784-6149e22f8da9,
+        _:34dd6068-8112-4c7a-a6a6-7cc7d15f44f3,
+        _:3a3b6982-176a-4d15-bab5-ce37b6cda043,
+        _:3b4ecd15-74ee-4f9b-bb7a-97f7ee2a6d92,
+        _:3c05f718-a5a6-49cb-a42b-178096219406,
+        _:41c0826b-69cf-483d-ad89-4d66a8aefad3,
+        _:443c6964-40cb-4f38-ac20-63bf55c69281,
+        _:47159e23-3ff1-4030-8813-b4db8699e364,
+        _:47f391e1-a49a-470f-86ed-4e03f56f3225,
+        _:51def079-5796-44f2-94f1-a0f60f7e7d46,
+        _:58a42382-02b0-4b2e-b62e-af58f5b7e06d,
+        _:58d46d69-fe60-4594-89a1-1670c4329c90,
+        _:5e2a55ca-a930-41a7-88b2-23feff4e8a70,
+        _:5f69602a-54f4-4fc7-86d9-02454efdc86a,
+        _:72efbea2-4d1e-4def-a915-8b14684bee6b,
+        _:777d55e2-cfc8-4981-a994-37690b12ef7e,
+        _:787f6e14-5e64-403a-b436-65fe29b20729,
+        _:798ff5a2-27ee-409c-8e35-4d172f69811c,
+        _:79ed169e-8572-45a9-9437-8b2efcf3d707,
+        _:7c7184df-cff8-4b5b-8cdb-b6343b76cb89,
+        _:87a48893-649a-4afe-bfa8-0f343cb34d47,
+        _:87caa119-0af9-487b-a3a0-b8626df3fd42,
+        _:8874c23c-ddb0-421a-bf42-8fabd3b72b4f,
+        _:8c1e8208-1acc-42ab-bd14-48ae5cfeba2e,
+        _:8d3342a2-2bea-4cbe-9a27-9e810b9f241e,
+        _:9895b404-e4fd-4a90-8621-2b60eb75f968,
+        _:9c957b33-46e0-44d2-871d-c8cfcc132e86,
+        _:a0721aea-88ad-4061-b27e-8113841cb193,
+        _:a429a1b4-c0ed-47da-9a32-4970a5a2f4a8,
+        _:aae6bd74-d17d-407c-b8a2-9545b3b0f742,
+        _:acde0548-65d7-4acc-8056-efa552787b5e,
+        _:b318b1dc-db04-4f11-ba43-e2eb75c82459,
+        _:b5d51532-8568-48b0-bde3-20a7099ff6be,
+        _:b7677491-cc5a-4202-9710-17a0f5de19c0,
+        _:bc10441f-5e34-4cc1-834a-82832c3483e5,
+        _:c44bf4bb-c151-498a-aec4-4f6b1ad45984,
+        _:c9958d29-b2d0-4df7-bcd8-c7f8f680f55d,
+        _:cad8a622-81cd-466e-9098-41b05d0533c3,
+        _:cfd19848-cde1-4c05-a39b-49a97b62999e,
+        _:d05ba40d-ae29-4296-ae05-71a05e3d4244,
+        _:d2e4c515-5caf-4236-961a-68623bcf2883,
+        _:d362d6d6-15f2-4360-9045-13f9885682ca,
+        _:d45b6698-3b92-4561-95c0-a1e0f24f2264,
+        _:d5be43d1-8486-4d82-a6eb-b654e19835f3,
+        _:d9c4619b-fb08-4b18-b14f-6aaa0c749bce,
+        _:dc1d6d91-8846-493c-855f-2f0f79dcaac0,
+        _:e1ff3a92-f465-442c-a2eb-f6585144394e,
+        _:e2349404-3ce7-44dc-a0ef-f225efd00627,
+        _:e28a14ff-9aee-4f2c-9c59-d818aa7059b9,
+        _:e3ed0ec0-0b6b-4eab-b2a2-f96e2443e66c,
+        _:e852b54c-f436-4b2f-ae43-8d662b89d29a,
+        _:ed168000-6d92-4f4f-9cf0-d9937558092f,
+        _:f10845ad-fa14-4f11-bf34-f281004816af,
+        _:f85aefaa-842d-4c72-ae55-3bd1a5df4f94 ;
+    tl:timeline _:15addaaf-439d-4852-a2e5-c94bc8fb2bc6 .
+
