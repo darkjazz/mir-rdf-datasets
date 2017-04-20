@@ -68,29 +68,30 @@ class EssentiaConverter:
         self.graph.bind("dc", self.namespaces["dc"])
 
     def get(self, musicbrainz_id, feature_type='low', output_format='n3'):
-        self.reset()
-        uri = ACOUSTICBRAINZ_URI % (musicbrainz_id, feature_type)
-        re, co = httplib2.Http().request(uri)
-        if re.status == 200:
-            self.json = json.loads(co.decode('utf-8'))
-            if feature_type == "low":
-                self.mapLowLevel()
-            else:
-                self.mapHighLevel()
-            if output_format == 'json-ld':
-                context = {}
+		self.reset()
+		self.format = output_format
+		uri = ACOUSTICBRAINZ_URI % (musicbrainz_id, feature_type)
+		re, co = httplib2.Http().request(uri)
+		if re.status == 200:
+			self.json = json.loads(co.decode('utf-8'))
+			if feature_type == "low":
+				self.mapLowLevel()
+			else:
+				self.mapHighLevel()
+			if output_format == 'json-ld':
+				context = {}
                 for pfx in self.namespaces:
                     context[pfx] = str(self.namespaces[pfx])
                 json_rdf = self.graph.serialize(format="json-ld", context=context)
                 framed = jsonld.frame(json_rdf, context, options={"documentLoader":dlfake})
                 compacted = jsonld.compact(framed, context, options={"documentLoader":dlfake})
-                return json.dumps(compacted, indent=2)
+                self.json_output = json.dumps(compacted, indent=2)
             else:
                 return self.graph.serialize(format=output_format)
         else:
             return json.dumps(re)
 
-    def loadFrame(self):
+	def loadFrame(self):
         return {
             "@context": {
                 "essentia": "http://sovarr.c4dm.eecs.qmul.ac.uk/af/essentia/",
@@ -327,7 +328,12 @@ class EssentiaConverter:
             return value
 
     def serialize(self, path):
-        self.graph.serialize(path, format='n3')
+		if self.format == 'json-ld':
+			with open(path, "w") as write_json:
+				write_json.write(self.json_output)
+				write_json.close()
+		else:
+			self.graph.serialize(path, format=self.format)
 
     def loadMap(self):
         #with open(MAP) as data_file:
@@ -492,7 +498,7 @@ def main():
 			test_file.close()
 		c = EssentiaConverter()
 		for mbid in mbids.split("\n"):
-			n3 = c.get(mbid)
+			n3 = c.get(mbid, 'low', 'n3')
 			c.serialize("./rdf/" + mbid + ".n3")
 			print(mbid)
 	else:
@@ -500,9 +506,15 @@ def main():
 			print("invalid MusicBrainz recording ID, exiting..")
 		else:
 			c = EssentiaConverter()
-			n3 = c.get(sys.argv[1])
+			ftype = 'low'
+			frmt = 'n3'
+			if sys.argv[3] == 'low' or sys.argv == 'high':
+				ftype = sys.argv[3]
+			if not sys.argv[4] is None:
+				frmt = sys.argv[4]
+			data = c.get(sys.argv[1], ftype, frmt)
 			if not sys.argv[2] is None:
-				c.serialize(sys.argv[2])
+				c.serialize(sys.argv[2], ftype, frmt)
 			else:
 				return n3
 
